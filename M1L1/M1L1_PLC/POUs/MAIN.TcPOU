@@ -42,7 +42,8 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[// Buttons to enable motors: write 0 to enable, 2 to disable
+      <ST><![CDATA[// M1K3
+// Buttons to enable motors: write 0 to enable, 2 to disable
 M1.nEnableMode; // Yup
 M2.nEnableMode; // Ydwn
 M3.nEnableMode; // Xup
@@ -85,6 +86,7 @@ fbMotionStage_x_dwn (stMotionStage:=M4);
 fbMotionStage_pitch (stMotionStage:=M5);]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
+      <LineId Id="124" Count="0" />
       <LineId Id="44" Count="21" />
       <LineId Id="67" Count="17" />
       <LineId Id="2" Count="0" />
