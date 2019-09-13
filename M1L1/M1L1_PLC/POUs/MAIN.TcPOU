@@ -39,8 +39,7 @@ VAR
 	nCurrGantryY : LINT;
 	nGantryTolX : LINT := 25000;
 	nGantryTolY : LINT := 25000;
-END_VAR
-]]></Declaration>
+END_VAR]]></Declaration>
     <Implementation>
       <ST><![CDATA[// M1K3
 // Buttons to enable motors: write 0 to enable, 2 to disable
