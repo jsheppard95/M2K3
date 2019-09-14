@@ -5,7 +5,7 @@
   <IsWizardTemplate>false</IsWizardTemplate>
   <LayoutString>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;Layout&gt;
-  &lt;Window Guid="b1560a06-9992-4c8c-9f35-e7602e22de09" LastFocused="132125433899274334" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="eb8d551f-2cc7-4025-b2af-4a164df487ad" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="b1560a06-9992-4c8c-9f35-e7602e22de09" LastFocused="132128897047639397" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="eb8d551f-2cc7-4025-b2af-4a164df487ad" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;DocumentContainer Dock="5"&gt;
     &lt;SplitLayoutSystem WorkingSize="250, 400" SplitMode="0"&gt;
       &lt;ControlLayoutSystem WorkingSize="250, 400" Guid="eb8d551f-2cc7-4025-b2af-4a164df487ad" Collapsed="0" SelectedControl="b1560a06-9992-4c8c-9f35-e7602e22de09"&gt;
@@ -87,7 +87,7 @@
       </XAxis>
       <YAxes>
         <ScopeYAxisSerializable>
-          <Caption>PitchCoarse</Caption>
+          <Caption>Position</Caption>
           <Name>Position absolute</Name>
           <Style>
             <Visible>true</Visible>
@@ -126,7 +126,7 @@
                 <SymbolName>AXES.Axis_PitchCoarse.ACTPOS</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>111</FileHandle>
+                <FileHandle>61</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -351,7 +351,7 @@
                 <SymbolName>AXES.Axis_PitchCoarse.SETPOS</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>112</FileHandle>
+                <FileHandle>62</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -610,7 +610,7 @@
                 <SymbolName>AXES.Axis_PitchCoarse.ACTVELO</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>113</FileHandle>
+                <FileHandle>63</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -835,7 +835,7 @@
                 <SymbolName>AXES.Axis_PitchCoarse.SETVELO</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>114</FileHandle>
+                <FileHandle>64</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -1094,7 +1094,7 @@
                 <SymbolName>AXES.Axis_PitchCoarse.POSDIFF</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>115</FileHandle>
+                <FileHandle>65</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -1346,14 +1346,14 @@
               <Acquisition>
                 <DataType>INT64</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>644184</IndexOffset>
+                <IndexOffset>646016</IndexOffset>
                 <Unit />
                 <TargetPort>851</TargetPort>
                 <VariableSize>8</VariableSize>
                 <SymbolName>MAIN.nCurrGantryX</SymbolName>
                 <SymbolComment> Gantry variables</SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>116</FileHandle>
+                <FileHandle>66</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
                 <SampleTime>100000</SampleTime>
@@ -1605,14 +1605,14 @@
               <Acquisition>
                 <DataType>INT64</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>644192</IndexOffset>
+                <IndexOffset>646024</IndexOffset>
                 <Unit />
                 <TargetPort>851</TargetPort>
                 <VariableSize>8</VariableSize>
                 <SymbolName>MAIN.nCurrGantryY</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>117</FileHandle>
+                <FileHandle>67</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
                 <SampleTime>100000</SampleTime>
@@ -1871,7 +1871,7 @@
                 <SymbolName>Axes.Axis_Ydwn.ActPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>118</FileHandle>
+                <FileHandle>68</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -2130,7 +2130,7 @@
                 <SymbolName>Axes.Axis_PitchCoarse.ActPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>119</FileHandle>
+                <FileHandle>69</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -2389,7 +2389,7 @@
                 <SymbolName>Axes.Axis_Xdwn.ActPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>120</FileHandle>
+                <FileHandle>70</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
