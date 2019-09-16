@@ -1337,16 +1337,16 @@ External Setpoint Generation:
 		<SvbTask Priority="8" CycleTime="100000" AmsPort="511">
 			<Name>NC-Task 1 SVB</Name>
 		</SvbTask>
-		<Axis CreateSymbols="true" AxisType="1" Id="1">
-			<Name>Axis_Yup</Name>
+		<Axis CreateSymbols="true" AxisType="1" Id="6">
+			<Name>y_up</Name>
 			<AxisPara>
 				<General UnitName="um"/>
 				<Dynamic Acceleration="5050" Deceleration="5050" Jerk="5100500" DelayTime="0.008"/>
-				<Velo SlowManual="60" FastManual="90" Maximum="200"/>
+				<Velo Maximum="500"/>
 				<OtherSettings AllowMotionCmdToSlave="true"/>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
-				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff" ReferenceSystem="1">
+				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff">
 					<Inc RefSoftSyncMask="#x0000ffff"/>
 				</EncPara>
 				<Vars VarGrpType="1">
@@ -1390,7 +1390,7 @@ External Setpoint Generation:
 			</Encoder>
 			<Drive Name="Drive" DrvType="24">
 				<DrvPara Inverse="true">
-					<Analog VeloReferenz="500" ScaleFactorActTorque="0.1"/>
+					<Analog VeloReferenz="500"/>
 					<TimeComp TaskDelayCycles="1"/>
 				</DrvPara>
 				<Vars VarGrpType="1">
@@ -1545,16 +1545,16 @@ External Setpoint Generation:
 				</Var>
 			</Vars>
 		</Axis>
-		<Axis CreateSymbols="true" AxisType="1" Id="2">
-			<Name>Axis_Ydwn</Name>
+		<Axis CreateSymbols="true" AxisType="1" Id="7">
+			<Name>y_dwn</Name>
 			<AxisPara>
 				<General UnitName="um"/>
 				<Dynamic Acceleration="5050" Deceleration="5050" Jerk="5100500" DelayTime="0.008"/>
-				<Velo SlowManual="60" FastManual="90" Maximum="200"/>
+				<Velo Maximum="500"/>
 				<OtherSettings AllowMotionCmdToSlave="true"/>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
-				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff" ReferenceSystem="1">
+				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff">
 					<Inc RefSoftSyncMask="#x0000ffff"/>
 				</EncPara>
 				<Vars VarGrpType="1">
@@ -1598,7 +1598,7 @@ External Setpoint Generation:
 			</Encoder>
 			<Drive Name="Drive" DrvType="24">
 				<DrvPara Inverse="true">
-					<Analog VeloReferenz="500" ScaleFactorActTorque="0.1"/>
+					<Analog VeloReferenz="500"/>
 					<TimeComp TaskDelayCycles="1"/>
 				</DrvPara>
 				<Vars VarGrpType="1">
@@ -1755,16 +1755,16 @@ External Setpoint Generation:
 				</Var>
 			</Vars>
 		</Axis>
-		<Axis CreateSymbols="true" AxisType="1" Id="3">
-			<Name>Axis_Xup</Name>
+		<Axis CreateSymbols="true" AxisType="1" Id="8">
+			<Name>x_up</Name>
 			<AxisPara>
 				<General UnitName="um"/>
-				<Dynamic Acceleration="1000" Deceleration="1000" Jerk="5000" DelayTime="0.008"/>
-				<Velo FastManual="150" Maximum="300"/>
+				<Dynamic AccelerationMaximum="1000" DecelerationMaximum="1000" Acceleration="1000" Deceleration="1000" Jerk="5000" DelayTime="0.008"/>
+				<Velo Maximum="625"/>
 				<OtherSettings AllowMotionCmdToSlave="true"/>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
-				<EncPara ScaleFactorNumerator="0.001" MaxCount="#xffffffff" ReferenceSystem="1">
+				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff">
 					<Inc RefSoftSyncMask="#x0000ffff"/>
 				</EncPara>
 				<Vars VarGrpType="1">
@@ -1808,7 +1808,7 @@ External Setpoint Generation:
 			</Encoder>
 			<Drive Name="Drive" DrvType="24">
 				<DrvPara Inverse="true">
-					<Analog VeloReferenz="625" ScaleFactorActTorque="0.1"/>
+					<Analog VeloReferenz="625"/>
 					<TimeComp TaskDelayCycles="1"/>
 				</DrvPara>
 				<Vars VarGrpType="1">
@@ -1896,9 +1896,10 @@ Drive Status 4 (manually linked):
 					</Var>
 				</Vars>
 			</Drive>
-			<Controller Name="Ctrl" CtrType="1">
+			<Controller Name="Ctrl" CtrType="3">
 				<CtrPara PriorControlFactor="1">
-					<PosDiffControl Range="50"/>
+					<PosDiffControl Range="50" Time="0.2"/>
+					<PID PosTn="0.005" PosIOutputLimit="0.0001" PosDOutputLimit="0" PosIDisableWhenMoving="true" DeadBandPosition="0.001"/>
 					<Observer BandWidth="20"/>
 				</CtrPara>
 			</Controller>
@@ -1964,16 +1965,16 @@ External Setpoint Generation:
 				</Var>
 			</Vars>
 		</Axis>
-		<Axis CreateSymbols="true" AxisType="1" Id="4">
-			<Name>Axis_Xdwn</Name>
+		<Axis CreateSymbols="true" AxisType="1" Id="9">
+			<Name>x_dwn</Name>
 			<AxisPara>
 				<General UnitName="um"/>
-				<Dynamic Acceleration="1000" Deceleration="1000" Jerk="5000" DelayTime="0.008"/>
-				<Velo FastManual="150" Maximum="300"/>
+				<Dynamic AccelerationMaximum="1000" DecelerationMaximum="1000" Acceleration="1000" Deceleration="1000" Jerk="5000" DelayTime="0.008"/>
+				<Velo Maximum="625"/>
 				<OtherSettings AllowMotionCmdToSlave="true"/>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
-				<EncPara ScaleFactorNumerator="0.001" MaxCount="#xffffffff" ReferenceSystem="1">
+				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff">
 					<Inc RefSoftSyncMask="#x0000ffff"/>
 				</EncPara>
 				<Vars VarGrpType="1">
@@ -2017,7 +2018,7 @@ External Setpoint Generation:
 			</Encoder>
 			<Drive Name="Drive" DrvType="24">
 				<DrvPara>
-					<Analog VeloReferenz="625" ScaleFactorActTorque="0.1"/>
+					<Analog VeloReferenz="625"/>
 					<TimeComp TaskDelayCycles="1"/>
 				</DrvPara>
 				<Vars VarGrpType="1">
@@ -2105,9 +2106,10 @@ Drive Status 4 (manually linked):
 					</Var>
 				</Vars>
 			</Drive>
-			<Controller Name="Ctrl" CtrType="1">
+			<Controller Name="Ctrl" CtrType="3">
 				<CtrPara PriorControlFactor="1">
-					<PosDiffControl Range="50"/>
+					<PosDiffControl Range="50" Time="0.2"/>
+					<PID PosTn="0.005" PosIOutputLimit="0.0001" PosDOutputLimit="0" PosIDisableWhenMoving="true" DeadBandPosition="0.001"/>
 					<Observer BandWidth="20"/>
 				</CtrPara>
 			</Controller>
@@ -2173,18 +2175,17 @@ External Setpoint Generation:
 				</Var>
 			</Vars>
 		</Axis>
-		<Axis CreateSymbols="true" AxisType="1" Id="5">
-			<Name>Axis_PitchCoarse</Name>
+		<Axis CreateSymbols="true" AxisType="1" Id="10">
+			<Name>pitch</Name>
 			<AxisPara>
 				<General UnitName="urad"/>
-				<Dynamic AccelerationMaximum="7042" Acceleration="64082" Deceleration="64082" Jerk="711156" DelayTime="0.008" VeloJumpFactor="2000"/>
-				<Velo SlowManual="30" FastManual="50" Maximum="100"/>
-				<MotionControl Time="0.1"/>
-				<TargetPosControl Time="2"/>
-				<OtherSettings AllowMotionCmdToSlave="true" AllowMotionCmdToExtSetGenAxis="true" PulseDistancePos="100"/>
+				<Dynamic Acceleration="64082.2" Deceleration="64082.2" Jerk="711156" DelayTime="0.008"/>
+				<Velo Maximum="7042"/>
+				<OtherSettings AllowMotionCmdToSlave="true"/>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
-				<EncPara ScaleFactorNumerator="0.00556" MaxCount="#xffffffff" ReferenceSystem="1">
+				<EncPara ScaleFactorNumerator="0.00556" MaxCount="#xffffffff">
+					<ActPosCorrection Time="0.008"/>
 					<Inc RefSoftSyncMask="#x0000ffff"/>
 				</EncPara>
 				<Vars VarGrpType="1">
@@ -2319,7 +2320,7 @@ Drive Status 4 (manually linked):
 			<Controller Name="Ctrl" CtrType="3">
 				<CtrPara PriorControlFactor="1">
 					<PosDiffControl Range="10" Time="0.2"/>
-					<PID PosKp="8" PosTn="0.0005" PosIOutputLimit="5e-005" PosDOutputLimit="0" DeadBandPosition="0.1"/>
+					<PID PosKp="9" PosTn="0.0006" PosTv="1.2e-005" PosIOutputLimit="0.0005" PosDOutputLimit="0.0035" AccKa="0.001" DeadBandPosition="0.1"/>
 					<Observer BandWidth="20"/>
 				</CtrPara>
 			</Controller>
@@ -2387,7 +2388,7 @@ External Setpoint Generation:
 		</Axis>
 	</NC>
 	<Mappings>
-		<OwnerA Name="Axes^Axis_PitchCoarse">
+		<OwnerA Name="Axes^pitch">
 			<OwnerB Name="TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 10 (EL7047) - PitchCoarse">
 				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Error" Size="1" OffsA="3"/>
 				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Motor stall" Size="1" OffsA="7"/>
@@ -2421,7 +2422,7 @@ External Setpoint Generation:
 				<Link VarA="Enc^Inputs^In^nState1" VarB="FB Inputs Channel 1^Status^Warning"/>
 			</OwnerB>
 		</OwnerA>
-		<OwnerA Name="Axes^Axis_Xdwn">
+		<OwnerA Name="Axes^x_dwn">
 			<OwnerB Name="TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 12 (EL5042) - X">
 				<Link VarA="Enc^Inputs^In^nComState" VarB="WcState^InputToggle" Size="1" OffsA="1"/>
 				<Link VarA="Enc^Inputs^In^nComState" VarB="WcState^WcState"/>
@@ -2455,7 +2456,7 @@ External Setpoint Generation:
 				<Link VarA="Drive^Outputs^Out^nDataOut2[0]" VarB="STM Velocity^Velocity"/>
 			</OwnerB>
 		</OwnerA>
-		<OwnerA Name="Axes^Axis_Xup">
+		<OwnerA Name="Axes^x_up">
 			<OwnerB Name="TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 12 (EL5042) - X">
 				<Link VarA="Enc^Inputs^In^nComState" VarB="WcState^InputToggle" Size="1" OffsA="1"/>
 				<Link VarA="Enc^Inputs^In^nComState" VarB="WcState^WcState"/>
@@ -2489,7 +2490,7 @@ External Setpoint Generation:
 				<Link VarA="Drive^Outputs^Out^nDataOut2[0]" VarB="STM Velocity^Velocity"/>
 			</OwnerB>
 		</OwnerA>
-		<OwnerA Name="Axes^Axis_Ydwn">
+		<OwnerA Name="Axes^y_dwn">
 			<OwnerB Name="TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 11 (EL5042) - Y">
 				<Link VarA="Enc^Inputs^In^nComState" VarB="WcState^InputToggle" Size="1" OffsA="1"/>
 				<Link VarA="Enc^Inputs^In^nComState" VarB="WcState^WcState"/>
@@ -2523,7 +2524,7 @@ External Setpoint Generation:
 				<Link VarA="Drive^Outputs^Out^nDataOut2[0]" VarB="STM Velocity^Velocity"/>
 			</OwnerB>
 		</OwnerA>
-		<OwnerA Name="Axes^Axis_Yup">
+		<OwnerA Name="Axes^y_up">
 			<OwnerB Name="TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 11 (EL5042) - Y">
 				<Link VarA="Enc^Inputs^In^nComState" VarB="WcState^InputToggle" Size="1" OffsA="1"/>
 				<Link VarA="Enc^Inputs^In^nComState" VarB="WcState^WcState"/>
