@@ -5,7 +5,7 @@
   <IsWizardTemplate>false</IsWizardTemplate>
   <LayoutString>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;Layout&gt;
-  &lt;Window Guid="b1560a06-9992-4c8c-9f35-e7602e22de09" LastFocused="132128897047639397" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="eb8d551f-2cc7-4025-b2af-4a164df487ad" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="b1560a06-9992-4c8c-9f35-e7602e22de09" LastFocused="132133210755270259" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="eb8d551f-2cc7-4025-b2af-4a164df487ad" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;DocumentContainer Dock="5"&gt;
     &lt;SplitLayoutSystem WorkingSize="250, 400" SplitMode="0"&gt;
       &lt;ControlLayoutSystem WorkingSize="250, 400" Guid="eb8d551f-2cc7-4025-b2af-4a164df487ad" Collapsed="0" SelectedControl="b1560a06-9992-4c8c-9f35-e7602e22de09"&gt;
@@ -123,10 +123,10 @@
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>AXES.y_up.ACTPOS</SymbolName>
+                <SymbolName>AXES.pitch.ACTPOS</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>13</FileHandle>
+                <FileHandle>289</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -348,10 +348,10 @@
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>AXES.y_up.SETPOS</SymbolName>
+                <SymbolName>AXES.pitch.SETPOS</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>14</FileHandle>
+                <FileHandle>290</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -607,10 +607,10 @@
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>AXES.y_up.ACTVELO</SymbolName>
+                <SymbolName>AXES.pitch.ACTVELO</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>15</FileHandle>
+                <FileHandle>291</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -832,10 +832,10 @@
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>AXES.y_up.SETVELO</SymbolName>
+                <SymbolName>AXES.pitch.SETVELO</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>16</FileHandle>
+                <FileHandle>292</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -1077,7 +1077,7 @@
             <Comment></Comment>
             <ShowName>true</ShowName>
             <Precision>6</Precision>
-            <ScaleMode>AutoGrowOnly</ScaleMode>
+            <ScaleMode>AutoGrowNShrink</ScaleMode>
           </Style>
           <Channels>
             <ScopeChannelSerializable>
@@ -1091,10 +1091,10 @@
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>AXES.y_up.POSDIFF</SymbolName>
+                <SymbolName>AXES.pitch.POSDIFF</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>17</FileHandle>
+                <FileHandle>293</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -1353,7 +1353,7 @@
                 <SymbolName>MAIN.nCurrGantryX</SymbolName>
                 <SymbolComment> Gantry variables</SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>18</FileHandle>
+                <FileHandle>294</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
                 <SampleTime>100000</SampleTime>
@@ -1612,7 +1612,7 @@
                 <SymbolName>MAIN.nCurrGantryY</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>19</FileHandle>
+                <FileHandle>295</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
                 <SampleTime>100000</SampleTime>
@@ -1836,7 +1836,7 @@
           <Name>Pos-Slave</Name>
           <Style>
             <Visible>true</Visible>
-            <Enabled>true</Enabled>
+            <Enabled>false</Enabled>
             <ColorValue>-13676721</ColorValue>
             <UseGrid>true</UseGrid>
             <Ticks>10</Ticks>
@@ -1863,15 +1863,15 @@
               <IdentHandle>8</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16647</IndexGroup>
+                <IndexGroup>16649</IndexGroup>
                 <IndexOffset>65538</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.y_dwn.ActPos</SymbolName>
+                <SymbolName>Axes.x_dwn.ActPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>20</FileHandle>
+                <FileHandle>296</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -1916,39 +1916,59 @@
                   <Records />
                 </MqttRecords>
                 <MqttConnectionSettings>
-                  <Broker></Broker>
+                  <Broker>
+                  </Broker>
                   <BrokerPort>1883</BrokerPort>
-                  <UserID></UserID>
+                  <UserID>
+                  </UserID>
                   <PasswordCrypted>uuUZT35iDGZDIKNgOStBw+1WrJbWbNUB</PasswordCrypted>
                   <WithCertificates>false</WithCertificates>
-                  <CA_Certificate></CA_Certificate>
-                  <CA_Pwd></CA_Pwd>
-                  <Pfx_Certificate></Pfx_Certificate>
-                  <Pfx_Pwd></Pfx_Pwd>
-                  <Cert_Certificate></Cert_Certificate>
-                  <Cert_Pwd></Cert_Pwd>
-                  <Key_Certificate></Key_Certificate>
-                  <Key_Pwd></Key_Pwd>
+                  <CA_Certificate>
+                  </CA_Certificate>
+                  <CA_Pwd>
+                  </CA_Pwd>
+                  <Pfx_Certificate>
+                  </Pfx_Certificate>
+                  <Pfx_Pwd>
+                  </Pfx_Pwd>
+                  <Cert_Certificate>
+                  </Cert_Certificate>
+                  <Cert_Pwd>
+                  </Cert_Pwd>
+                  <Key_Certificate>
+                  </Key_Certificate>
+                  <Key_Pwd>
+                  </Key_Pwd>
                 </MqttConnectionSettings>
                 <MqttSymbolName>unknown</MqttSymbolName>
                 <MqttValueByteOffset>4294967295</MqttValueByteOffset>
                 <MqttCmdTopic>unknown</MqttCmdTopic>
                 <IsHistorical>false</IsHistorical>
                 <OpcUaAddress>
-                  <ServerUrl></ServerUrl>
-                  <EndpointName></EndpointName>
-                  <SecurityPolicyUri></SecurityPolicyUri>
+                  <ServerUrl>
+                  </ServerUrl>
+                  <EndpointName>
+                  </EndpointName>
+                  <SecurityPolicyUri>
+                  </SecurityPolicyUri>
                   <IdentityType>Anonymous</IdentityType>
-                  <UserName></UserName>
+                  <UserName>
+                  </UserName>
                 </OpcUaAddress>
                 <OpcUaSymbol>
-                  <Name></Name>
-                  <Path></Path>
+                  <Name>
+                  </Name>
+                  <Path>
+                  </Path>
                   <BitSize>0</BitSize>
-                  <BaseType></BaseType>
-                  <NodeClass></NodeClass>
-                  <NodeId></NodeId>
-                  <NamespaceName></NamespaceName>
+                  <BaseType>
+                  </BaseType>
+                  <NodeClass>
+                  </NodeClass>
+                  <NodeId>
+                  </NodeId>
+                  <NamespaceName>
+                  </NamespaceName>
                   <IsArray>false</IsArray>
                   <IsMatrix>false</IsMatrix>
                   <Dimensions>0</Dimensions>
@@ -1989,7 +2009,8 @@
                     <Prefix>none</Prefix>
                     <ScaleFactor>1</ScaleFactor>
                     <Offset>0</Offset>
-                    <Symbol></Symbol>
+                    <Symbol>
+                    </Symbol>
                     <ReturnText> (None) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
@@ -2012,7 +2033,8 @@
                     <Name>None</Name>
                     <BaseName>UnitOfOne</BaseName>
                     <NameExtension />
-                    <Symbol></Symbol>
+                    <Symbol>
+                    </Symbol>
                     <BaseUnitString />
                     <UserPrefix>none</UserPrefix>
                   </UserUnit>
@@ -2025,7 +2047,8 @@
                     <Prefix>none</Prefix>
                     <ScaleFactor>1</ScaleFactor>
                     <Offset>0</Offset>
-                    <Symbol></Symbol>
+                    <Symbol>
+                    </Symbol>
                     <ReturnText> (None) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
@@ -2048,7 +2071,8 @@
                     <Name>None</Name>
                     <BaseName>UnitOfOne</BaseName>
                     <NameExtension />
-                    <Symbol></Symbol>
+                    <Symbol>
+                    </Symbol>
                     <BaseUnitString />
                     <UserPrefix>none</UserPrefix>
                   </UserUnit>
@@ -2064,15 +2088,15 @@
               <IdentHandle>9</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16647</IndexGroup>
+                <IndexGroup>16649</IndexGroup>
                 <IndexOffset>10</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.y_dwn.SetPos</SymbolName>
+                <SymbolName>Axes.x_dwn.SetPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>21</FileHandle>
+                <FileHandle>297</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -2117,39 +2141,59 @@
                   <Records />
                 </MqttRecords>
                 <MqttConnectionSettings>
-                  <Broker></Broker>
+                  <Broker>
+                  </Broker>
                   <BrokerPort>1883</BrokerPort>
-                  <UserID></UserID>
+                  <UserID>
+                  </UserID>
                   <PasswordCrypted>zCzifZ5WyGPcfRapKnMnyFYLypzWbNUB</PasswordCrypted>
                   <WithCertificates>false</WithCertificates>
-                  <CA_Certificate></CA_Certificate>
-                  <CA_Pwd></CA_Pwd>
-                  <Pfx_Certificate></Pfx_Certificate>
-                  <Pfx_Pwd></Pfx_Pwd>
-                  <Cert_Certificate></Cert_Certificate>
-                  <Cert_Pwd></Cert_Pwd>
-                  <Key_Certificate></Key_Certificate>
-                  <Key_Pwd></Key_Pwd>
+                  <CA_Certificate>
+                  </CA_Certificate>
+                  <CA_Pwd>
+                  </CA_Pwd>
+                  <Pfx_Certificate>
+                  </Pfx_Certificate>
+                  <Pfx_Pwd>
+                  </Pfx_Pwd>
+                  <Cert_Certificate>
+                  </Cert_Certificate>
+                  <Cert_Pwd>
+                  </Cert_Pwd>
+                  <Key_Certificate>
+                  </Key_Certificate>
+                  <Key_Pwd>
+                  </Key_Pwd>
                 </MqttConnectionSettings>
                 <MqttSymbolName>unknown</MqttSymbolName>
                 <MqttValueByteOffset>4294967295</MqttValueByteOffset>
                 <MqttCmdTopic>unknown</MqttCmdTopic>
                 <IsHistorical>false</IsHistorical>
                 <OpcUaAddress>
-                  <ServerUrl></ServerUrl>
-                  <EndpointName></EndpointName>
-                  <SecurityPolicyUri></SecurityPolicyUri>
+                  <ServerUrl>
+                  </ServerUrl>
+                  <EndpointName>
+                  </EndpointName>
+                  <SecurityPolicyUri>
+                  </SecurityPolicyUri>
                   <IdentityType>Anonymous</IdentityType>
-                  <UserName></UserName>
+                  <UserName>
+                  </UserName>
                 </OpcUaAddress>
                 <OpcUaSymbol>
-                  <Name></Name>
-                  <Path></Path>
+                  <Name>
+                  </Name>
+                  <Path>
+                  </Path>
                   <BitSize>0</BitSize>
-                  <BaseType></BaseType>
-                  <NodeClass></NodeClass>
-                  <NodeId></NodeId>
-                  <NamespaceName></NamespaceName>
+                  <BaseType>
+                  </BaseType>
+                  <NodeClass>
+                  </NodeClass>
+                  <NodeId>
+                  </NodeId>
+                  <NamespaceName>
+                  </NamespaceName>
                   <IsArray>false</IsArray>
                   <IsMatrix>false</IsMatrix>
                   <Dimensions>0</Dimensions>
@@ -2190,7 +2234,8 @@
                     <Prefix>none</Prefix>
                     <ScaleFactor>1</ScaleFactor>
                     <Offset>0</Offset>
-                    <Symbol></Symbol>
+                    <Symbol>
+                    </Symbol>
                     <ReturnText> (None) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
@@ -2213,7 +2258,8 @@
                     <Name>None</Name>
                     <BaseName>UnitOfOne</BaseName>
                     <NameExtension />
-                    <Symbol></Symbol>
+                    <Symbol>
+                    </Symbol>
                     <BaseUnitString />
                     <UserPrefix>none</UserPrefix>
                   </UserUnit>
@@ -2226,7 +2272,8 @@
                     <Prefix>none</Prefix>
                     <ScaleFactor>1</ScaleFactor>
                     <Offset>0</Offset>
-                    <Symbol></Symbol>
+                    <Symbol>
+                    </Symbol>
                     <ReturnText> (None) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
@@ -2249,7 +2296,8 @@
                     <Name>None</Name>
                     <BaseName>UnitOfOne</BaseName>
                     <NameExtension />
-                    <Symbol></Symbol>
+                    <Symbol>
+                    </Symbol>
                     <BaseUnitString />
                     <UserPrefix>none</UserPrefix>
                   </UserUnit>
@@ -2272,7 +2320,7 @@
           <Name>Velo-Slave</Name>
           <Style>
             <Visible>true</Visible>
-            <Enabled>true</Enabled>
+            <Enabled>false</Enabled>
             <ColorValue>-13676721</ColorValue>
             <UseGrid>true</UseGrid>
             <Ticks>10</Ticks>
@@ -2299,15 +2347,15 @@
               <IdentHandle>10</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16647</IndexGroup>
+                <IndexGroup>16649</IndexGroup>
                 <IndexOffset>65541</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.y_dwn.ActVelo</SymbolName>
+                <SymbolName>Axes.x_dwn.ActVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>22</FileHandle>
+                <FileHandle>298</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -2352,39 +2400,59 @@
                   <Records />
                 </MqttRecords>
                 <MqttConnectionSettings>
-                  <Broker></Broker>
+                  <Broker>
+                  </Broker>
                   <BrokerPort>1883</BrokerPort>
-                  <UserID></UserID>
+                  <UserID>
+                  </UserID>
                   <PasswordCrypted>ahD4Yr9FaMZaWD4LAjlkZwbuT63WbNUB</PasswordCrypted>
                   <WithCertificates>false</WithCertificates>
-                  <CA_Certificate></CA_Certificate>
-                  <CA_Pwd></CA_Pwd>
-                  <Pfx_Certificate></Pfx_Certificate>
-                  <Pfx_Pwd></Pfx_Pwd>
-                  <Cert_Certificate></Cert_Certificate>
-                  <Cert_Pwd></Cert_Pwd>
-                  <Key_Certificate></Key_Certificate>
-                  <Key_Pwd></Key_Pwd>
+                  <CA_Certificate>
+                  </CA_Certificate>
+                  <CA_Pwd>
+                  </CA_Pwd>
+                  <Pfx_Certificate>
+                  </Pfx_Certificate>
+                  <Pfx_Pwd>
+                  </Pfx_Pwd>
+                  <Cert_Certificate>
+                  </Cert_Certificate>
+                  <Cert_Pwd>
+                  </Cert_Pwd>
+                  <Key_Certificate>
+                  </Key_Certificate>
+                  <Key_Pwd>
+                  </Key_Pwd>
                 </MqttConnectionSettings>
                 <MqttSymbolName>unknown</MqttSymbolName>
                 <MqttValueByteOffset>4294967295</MqttValueByteOffset>
                 <MqttCmdTopic>unknown</MqttCmdTopic>
                 <IsHistorical>false</IsHistorical>
                 <OpcUaAddress>
-                  <ServerUrl></ServerUrl>
-                  <EndpointName></EndpointName>
-                  <SecurityPolicyUri></SecurityPolicyUri>
+                  <ServerUrl>
+                  </ServerUrl>
+                  <EndpointName>
+                  </EndpointName>
+                  <SecurityPolicyUri>
+                  </SecurityPolicyUri>
                   <IdentityType>Anonymous</IdentityType>
-                  <UserName></UserName>
+                  <UserName>
+                  </UserName>
                 </OpcUaAddress>
                 <OpcUaSymbol>
-                  <Name></Name>
-                  <Path></Path>
+                  <Name>
+                  </Name>
+                  <Path>
+                  </Path>
                   <BitSize>0</BitSize>
-                  <BaseType></BaseType>
-                  <NodeClass></NodeClass>
-                  <NodeId></NodeId>
-                  <NamespaceName></NamespaceName>
+                  <BaseType>
+                  </BaseType>
+                  <NodeClass>
+                  </NodeClass>
+                  <NodeId>
+                  </NodeId>
+                  <NamespaceName>
+                  </NamespaceName>
                   <IsArray>false</IsArray>
                   <IsMatrix>false</IsMatrix>
                   <Dimensions>0</Dimensions>
@@ -2425,7 +2493,8 @@
                     <Prefix>none</Prefix>
                     <ScaleFactor>1</ScaleFactor>
                     <Offset>0</Offset>
-                    <Symbol></Symbol>
+                    <Symbol>
+                    </Symbol>
                     <ReturnText> (None) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
@@ -2448,7 +2517,8 @@
                     <Name>None</Name>
                     <BaseName>UnitOfOne</BaseName>
                     <NameExtension />
-                    <Symbol></Symbol>
+                    <Symbol>
+                    </Symbol>
                     <BaseUnitString />
                     <UserPrefix>none</UserPrefix>
                   </UserUnit>
@@ -2461,7 +2531,8 @@
                     <Prefix>none</Prefix>
                     <ScaleFactor>1</ScaleFactor>
                     <Offset>0</Offset>
-                    <Symbol></Symbol>
+                    <Symbol>
+                    </Symbol>
                     <ReturnText> (None) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
@@ -2484,7 +2555,8 @@
                     <Name>None</Name>
                     <BaseName>UnitOfOne</BaseName>
                     <NameExtension />
-                    <Symbol></Symbol>
+                    <Symbol>
+                    </Symbol>
                     <BaseUnitString />
                     <UserPrefix>none</UserPrefix>
                   </UserUnit>
@@ -2500,15 +2572,15 @@
               <IdentHandle>11</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16647</IndexGroup>
+                <IndexGroup>16649</IndexGroup>
                 <IndexOffset>14</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.y_dwn.SetVelo</SymbolName>
+                <SymbolName>Axes.x_dwn.SetVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>23</FileHandle>
+                <FileHandle>299</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -2553,39 +2625,59 @@
                   <Records />
                 </MqttRecords>
                 <MqttConnectionSettings>
-                  <Broker></Broker>
+                  <Broker>
+                  </Broker>
                   <BrokerPort>1883</BrokerPort>
-                  <UserID></UserID>
+                  <UserID>
+                  </UserID>
                   <PasswordCrypted>0OOgK/wtFQ/z1KMD/VlSQhkm7LDWbNUB</PasswordCrypted>
                   <WithCertificates>false</WithCertificates>
-                  <CA_Certificate></CA_Certificate>
-                  <CA_Pwd></CA_Pwd>
-                  <Pfx_Certificate></Pfx_Certificate>
-                  <Pfx_Pwd></Pfx_Pwd>
-                  <Cert_Certificate></Cert_Certificate>
-                  <Cert_Pwd></Cert_Pwd>
-                  <Key_Certificate></Key_Certificate>
-                  <Key_Pwd></Key_Pwd>
+                  <CA_Certificate>
+                  </CA_Certificate>
+                  <CA_Pwd>
+                  </CA_Pwd>
+                  <Pfx_Certificate>
+                  </Pfx_Certificate>
+                  <Pfx_Pwd>
+                  </Pfx_Pwd>
+                  <Cert_Certificate>
+                  </Cert_Certificate>
+                  <Cert_Pwd>
+                  </Cert_Pwd>
+                  <Key_Certificate>
+                  </Key_Certificate>
+                  <Key_Pwd>
+                  </Key_Pwd>
                 </MqttConnectionSettings>
                 <MqttSymbolName>unknown</MqttSymbolName>
                 <MqttValueByteOffset>4294967295</MqttValueByteOffset>
                 <MqttCmdTopic>unknown</MqttCmdTopic>
                 <IsHistorical>false</IsHistorical>
                 <OpcUaAddress>
-                  <ServerUrl></ServerUrl>
-                  <EndpointName></EndpointName>
-                  <SecurityPolicyUri></SecurityPolicyUri>
+                  <ServerUrl>
+                  </ServerUrl>
+                  <EndpointName>
+                  </EndpointName>
+                  <SecurityPolicyUri>
+                  </SecurityPolicyUri>
                   <IdentityType>Anonymous</IdentityType>
-                  <UserName></UserName>
+                  <UserName>
+                  </UserName>
                 </OpcUaAddress>
                 <OpcUaSymbol>
-                  <Name></Name>
-                  <Path></Path>
+                  <Name>
+                  </Name>
+                  <Path>
+                  </Path>
                   <BitSize>0</BitSize>
-                  <BaseType></BaseType>
-                  <NodeClass></NodeClass>
-                  <NodeId></NodeId>
-                  <NamespaceName></NamespaceName>
+                  <BaseType>
+                  </BaseType>
+                  <NodeClass>
+                  </NodeClass>
+                  <NodeId>
+                  </NodeId>
+                  <NamespaceName>
+                  </NamespaceName>
                   <IsArray>false</IsArray>
                   <IsMatrix>false</IsMatrix>
                   <Dimensions>0</Dimensions>
@@ -2626,7 +2718,8 @@
                     <Prefix>none</Prefix>
                     <ScaleFactor>1</ScaleFactor>
                     <Offset>0</Offset>
-                    <Symbol></Symbol>
+                    <Symbol>
+                    </Symbol>
                     <ReturnText> (None) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
@@ -2649,7 +2742,8 @@
                     <Name>None</Name>
                     <BaseName>UnitOfOne</BaseName>
                     <NameExtension />
-                    <Symbol></Symbol>
+                    <Symbol>
+                    </Symbol>
                     <BaseUnitString />
                     <UserPrefix>none</UserPrefix>
                   </UserUnit>
@@ -2662,7 +2756,8 @@
                     <Prefix>none</Prefix>
                     <ScaleFactor>1</ScaleFactor>
                     <Offset>0</Offset>
-                    <Symbol></Symbol>
+                    <Symbol>
+                    </Symbol>
                     <ReturnText> (None) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
@@ -2685,7 +2780,8 @@
                     <Name>None</Name>
                     <BaseName>UnitOfOne</BaseName>
                     <NameExtension />
-                    <Symbol></Symbol>
+                    <Symbol>
+                    </Symbol>
                     <BaseUnitString />
                     <UserPrefix>none</UserPrefix>
                   </UserUnit>
@@ -2708,7 +2804,7 @@
           <Name>Lag-Slave</Name>
           <Style>
             <Visible>true</Visible>
-            <Enabled>true</Enabled>
+            <Enabled>false</Enabled>
             <ColorValue>-13676721</ColorValue>
             <UseGrid>true</UseGrid>
             <Ticks>10</Ticks>
@@ -2735,15 +2831,15 @@
               <IdentHandle>12</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16647</IndexGroup>
+                <IndexGroup>16649</IndexGroup>
                 <IndexOffset>131087</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.y_dwn.PosDiff</SymbolName>
+                <SymbolName>Axes.x_dwn.PosDiff</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>24</FileHandle>
+                <FileHandle>300</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -2788,39 +2884,59 @@
                   <Records />
                 </MqttRecords>
                 <MqttConnectionSettings>
-                  <Broker></Broker>
+                  <Broker>
+                  </Broker>
                   <BrokerPort>1883</BrokerPort>
-                  <UserID></UserID>
+                  <UserID>
+                  </UserID>
                   <PasswordCrypted>g0HM0tkyTTGUGgVNluelrz5tnbvWbNUB</PasswordCrypted>
                   <WithCertificates>false</WithCertificates>
-                  <CA_Certificate></CA_Certificate>
-                  <CA_Pwd></CA_Pwd>
-                  <Pfx_Certificate></Pfx_Certificate>
-                  <Pfx_Pwd></Pfx_Pwd>
-                  <Cert_Certificate></Cert_Certificate>
-                  <Cert_Pwd></Cert_Pwd>
-                  <Key_Certificate></Key_Certificate>
-                  <Key_Pwd></Key_Pwd>
+                  <CA_Certificate>
+                  </CA_Certificate>
+                  <CA_Pwd>
+                  </CA_Pwd>
+                  <Pfx_Certificate>
+                  </Pfx_Certificate>
+                  <Pfx_Pwd>
+                  </Pfx_Pwd>
+                  <Cert_Certificate>
+                  </Cert_Certificate>
+                  <Cert_Pwd>
+                  </Cert_Pwd>
+                  <Key_Certificate>
+                  </Key_Certificate>
+                  <Key_Pwd>
+                  </Key_Pwd>
                 </MqttConnectionSettings>
                 <MqttSymbolName>unknown</MqttSymbolName>
                 <MqttValueByteOffset>4294967295</MqttValueByteOffset>
                 <MqttCmdTopic>unknown</MqttCmdTopic>
                 <IsHistorical>false</IsHistorical>
                 <OpcUaAddress>
-                  <ServerUrl></ServerUrl>
-                  <EndpointName></EndpointName>
-                  <SecurityPolicyUri></SecurityPolicyUri>
+                  <ServerUrl>
+                  </ServerUrl>
+                  <EndpointName>
+                  </EndpointName>
+                  <SecurityPolicyUri>
+                  </SecurityPolicyUri>
                   <IdentityType>Anonymous</IdentityType>
-                  <UserName></UserName>
+                  <UserName>
+                  </UserName>
                 </OpcUaAddress>
                 <OpcUaSymbol>
-                  <Name></Name>
-                  <Path></Path>
+                  <Name>
+                  </Name>
+                  <Path>
+                  </Path>
                   <BitSize>0</BitSize>
-                  <BaseType></BaseType>
-                  <NodeClass></NodeClass>
-                  <NodeId></NodeId>
-                  <NamespaceName></NamespaceName>
+                  <BaseType>
+                  </BaseType>
+                  <NodeClass>
+                  </NodeClass>
+                  <NodeId>
+                  </NodeId>
+                  <NamespaceName>
+                  </NamespaceName>
                   <IsArray>false</IsArray>
                   <IsMatrix>false</IsMatrix>
                   <Dimensions>0</Dimensions>
@@ -2861,7 +2977,8 @@
                     <Prefix>none</Prefix>
                     <ScaleFactor>1</ScaleFactor>
                     <Offset>0</Offset>
-                    <Symbol></Symbol>
+                    <Symbol>
+                    </Symbol>
                     <ReturnText> (None) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
@@ -2884,7 +3001,8 @@
                     <Name>None</Name>
                     <BaseName>UnitOfOne</BaseName>
                     <NameExtension />
-                    <Symbol></Symbol>
+                    <Symbol>
+                    </Symbol>
                     <BaseUnitString />
                     <UserPrefix>none</UserPrefix>
                   </UserUnit>
@@ -2897,7 +3015,8 @@
                     <Prefix>none</Prefix>
                     <ScaleFactor>1</ScaleFactor>
                     <Offset>0</Offset>
-                    <Symbol></Symbol>
+                    <Symbol>
+                    </Symbol>
                     <ReturnText> (None) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
@@ -2920,7 +3039,8 @@
                     <Name>None</Name>
                     <BaseName>UnitOfOne</BaseName>
                     <NameExtension />
-                    <Symbol></Symbol>
+                    <Symbol>
+                    </Symbol>
                     <BaseUnitString />
                     <UserPrefix>none</UserPrefix>
                   </UserUnit>
@@ -2951,7 +3071,7 @@
         <Precision>6</Precision>
       </CursorModule>
       <Operating>
-        <DisplayWidth>180000000</DisplayWidth>
+        <DisplayWidth>100000000</DisplayWidth>
       </Operating>
       <ChartType>XT</ChartType>
       <SortPriority>-1</SortPriority>

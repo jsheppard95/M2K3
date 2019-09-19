@@ -2319,7 +2319,7 @@ Drive Status 4 (manually linked):
 			</Drive>
 			<Controller Name="Ctrl" CtrType="3">
 				<CtrPara PriorControlFactor="1">
-					<PosDiffControl Range="10" Time="0.2"/>
+					<PosDiffControl Range="15" Time="0.2"/>
 					<PID PosKp="9" PosTn="0.0006" PosTv="1.2e-005" PosIOutputLimit="0.0005" PosDOutputLimit="0.0035" AccKa="0.001" DeadBandPosition="0.1"/>
 					<Observer BandWidth="20"/>
 				</CtrPara>
