@@ -41,7 +41,7 @@ VAR
 	nGantryTolY : LINT := 25000;
 END_VAR]]></Declaration>
     <Implementation>
-      <ST><![CDATA[// M1K3
+      <ST><![CDATA[// M2K3
 // Buttons to enable motors: write 0 to enable, 2 to disable
 M1.nEnableMode; // Yup
 M2.nEnableMode; // Ydwn
@@ -53,7 +53,7 @@ M5.nEnableMode; // PitchCoarse
 //M2K3 Ref Vals
 y_up_enc.Ref := 106817000;
 y_dwn_enc.Ref := 108078000; // Use initial motor positions for now
-x_up_enc.Ref := 19944000;
+x_up_enc.Ref := 19994000;
 x_dwn_enc.Ref := 19728000;
 
 // Gantry Differences to monitor
