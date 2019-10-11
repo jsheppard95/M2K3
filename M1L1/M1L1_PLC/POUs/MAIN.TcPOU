@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.12">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4020.14">
   <POU Name="MAIN" Id="{2ce36a91-321d-4828-96a2-d7e21b9a58d0}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
@@ -52,12 +52,13 @@ M3.nEnableMode; // Xup
 M4.nEnableMode; // Xdwn
 M5.nEnableMode; // PitchCoarse
 
-// Encoder Reference Values: Taking from Axilon FAT
+// Encoder Reference Values: Initially took from Axilon FAT
+// Had to realign encoders (lights were red) and so now using motor positions after aligning (lights turned blue)
 // M2K3 Ref Vals
-y_up_enc.Ref := 106817000;
-y_dwn_enc.Ref := 108078000;
-x_up_enc.Ref := 19994000;
-x_dwn_enc.Ref := 19728000;
+y_up_enc.Ref := 43575680;
+y_dwn_enc.Ref := 46974520;
+x_up_enc.Ref := 20359920;
+x_dwn_enc.Ref := 19780970;
 
 // Gantry Differences to monitor
 nCurrGantryY := ((ULINT_TO_LINT(y_up_enc.Count) - ULINT_TO_LINT(y_up_enc.Ref)) - (ULINT_TO_LINT(y_dwn_enc.Count) - ULINT_TO_LINT(y_dwn_enc.Ref)));
@@ -88,5 +89,12 @@ fbMotionStage_x_up  (stMotionStage:=M3);
 fbMotionStage_x_dwn (stMotionStage:=M4);
 fbMotionStage_pitch (stMotionStage:=M5);]]></ST>
     </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="3" Count="7" />
+      <LineId Id="87" Count="0" />
+      <LineId Id="86" Count="0" />
+      <LineId Id="12" Count="32" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>
