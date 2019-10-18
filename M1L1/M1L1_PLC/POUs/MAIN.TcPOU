@@ -42,6 +42,13 @@ VAR
 	nCurrGantryY : LINT;
 	nGantryTolX : LINT := 25000;
 	nGantryTolY : LINT := 25000;
+	
+	// Current Variables
+	nCoilACurrRaw AT %I* : UINT;
+	nCoilBCurrRaw AT %I* : UINT;
+	nCoilACurr : INT;
+	nCoilBCurr : INT;
+	nTotCurr : INT; 
 END_VAR]]></Declaration>
     <Implementation>
       <ST><![CDATA[// M2K3
@@ -73,10 +80,10 @@ M5.bHardwareEnable := stoEnable;
 
 
 // Start Autocoupling
-//fbAutoCoupleX(nGantryTol:=nGantryTolX, Master:=M3, MasterEnc:=x_up_enc, Slave:=M4,
-//	          SlaveEnc:=x_dwn_enc, bExecuteCouple:=bExecuteCoupleX,
-//              bExecuteDecouple:=bExecuteDecoupleX,
-//              bGantryAlreadyCoupled=>bGantryAlreadyCoupledX);
+fbAutoCoupleX(nGantryTol:=nGantryTolX, Master:=M3, MasterEnc:=x_up_enc, Slave:=M4,
+	          SlaveEnc:=x_dwn_enc, bExecuteCouple:=bExecuteCoupleX,
+              bExecuteDecouple:=bExecuteDecoupleX,
+              bGantryAlreadyCoupled=>bGantryAlreadyCoupledX);
 
 fbAutoCoupleY(nGantryTol:=nGantryTolY, Master:=M1, MasterEnc:=y_up_enc, Slave:=M2,
 	          SlaveEnc:=y_dwn_enc, bExecuteCouple:=bExecuteCoupleY,
@@ -87,13 +94,18 @@ fbMotionStage_y_up  (stMotionStage:=M1);
 fbMotionStage_y_dwn (stMotionStage:=M2);
 fbMotionStage_x_up  (stMotionStage:=M3);
 fbMotionStage_x_dwn (stMotionStage:=M4);
-fbMotionStage_pitch (stMotionStage:=M5);]]></ST>
+fbMotionStage_pitch (stMotionStage:=M5);
+
+nCoilACurr := UINT_TO_INT(nCoilACurrRaw);
+nCoilBCurr := UINT_TO_INT(nCoilBCurrRaw);
+nTotCurr := ABS(nCoilACurr) + ABS(nCoilBCurr);]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="3" Count="7" />
       <LineId Id="87" Count="0" />
       <LineId Id="86" Count="0" />
       <LineId Id="12" Count="32" />
+      <LineId Id="136" Count="3" />
       <LineId Id="2" Count="0" />
     </LineIds>
   </POU>
