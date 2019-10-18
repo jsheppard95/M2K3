@@ -73,10 +73,10 @@ M5.bHardwareEnable := stoEnable;
 
 
 // Start Autocoupling
-fbAutoCoupleX(nGantryTol:=nGantryTolX, Master:=M3, MasterEnc:=x_up_enc, Slave:=M4,
-	          SlaveEnc:=x_dwn_enc, bExecuteCouple:=bExecuteCoupleX,
-              bExecuteDecouple:=bExecuteDecoupleX,
-              bGantryAlreadyCoupled=>bGantryAlreadyCoupledX);
+//fbAutoCoupleX(nGantryTol:=nGantryTolX, Master:=M3, MasterEnc:=x_up_enc, Slave:=M4,
+//	          SlaveEnc:=x_dwn_enc, bExecuteCouple:=bExecuteCoupleX,
+//              bExecuteDecouple:=bExecuteDecoupleX,
+//              bGantryAlreadyCoupled=>bGantryAlreadyCoupledX);
 
 fbAutoCoupleY(nGantryTol:=nGantryTolY, Master:=M1, MasterEnc:=y_up_enc, Slave:=M2,
 	          SlaveEnc:=y_dwn_enc, bExecuteCouple:=bExecuteCoupleY,
