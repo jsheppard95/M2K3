@@ -42,13 +42,34 @@ VAR
 	nCurrGantryY : LINT;
 	nGantryTolX : LINT := 25000;
 	nGantryTolY : LINT := 25000;
-	
+
 	// Current Variables
 	nCoilACurrRaw AT %I* : UINT;
 	nCoilBCurrRaw AT %I* : UINT;
 	nCoilACurr : INT;
 	nCoilBCurr : INT;
-	nTotCurr : INT; 
+	nTotCurr : INT;
+
+	// Counters for encoder warning
+	ctuXup : CTU;
+	bEncWarningXup AT %I* : BOOL; // TRUE when encoder warning occurs
+	nNumWarningsXup : WORD := 0;
+
+	ctuXdwn : CTU;
+	bEncWarningXdwn AT %I* : BOOL; // TRUE when encoder warning occurs
+	nNumWarningsXdwn : WORD := 0;
+
+	ctuYup : CTU;
+	bEncWarningYup AT %I* : BOOL; // TRUE when encoder warning occurs
+	nNumWarningsYup : WORD := 0;
+
+	ctuYdwn : CTU;
+	bEncWarningYdwn AT %I* : BOOL; // TRUE when encoder warning occurs
+	nNumWarningsYdwn : WORD := 0;
+
+	ctuPitch : CTU;
+	bEncWarningPitch AT %I* : BOOL; // TRUE when encoder warning occurs
+	nNumWarningsPitch : WORD := 0;
 END_VAR]]></Declaration>
     <Implementation>
       <ST><![CDATA[// M2K3
@@ -96,16 +117,29 @@ fbMotionStage_x_up  (stMotionStage:=M3);
 fbMotionStage_x_dwn (stMotionStage:=M4);
 fbMotionStage_pitch (stMotionStage:=M5);
 
+// Record Coil Current
 nCoilACurr := UINT_TO_INT(nCoilACurrRaw);
 nCoilBCurr := UINT_TO_INT(nCoilBCurrRaw);
-nTotCurr := ABS(nCoilACurr) + ABS(nCoilBCurr);]]></ST>
+nTotCurr := ABS(nCoilACurr) + ABS(nCoilBCurr);
+
+// Count when encoders throw warning
+ctuXup(CU:=bEncWarningXup, CV=>nNumWarningsXup);
+ctuXdwn(CU:=bEncWarningXdwn, CV=>nNumWarningsXdwn);
+ctuYup(CU:=bEncWarningYup, CV=>nNumWarningsYup);
+ctuYdwn(CU:=bEncWarningYdwn, CV=>nNumWarningsYdwn);
+ctuPitch(CU:=bEncWarningPitch, CV=>nNumWarningsPitch);]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="3" Count="7" />
       <LineId Id="87" Count="0" />
       <LineId Id="86" Count="0" />
       <LineId Id="12" Count="32" />
-      <LineId Id="136" Count="3" />
+      <LineId Id="136" Count="0" />
+      <LineId Id="192" Count="0" />
+      <LineId Id="137" Count="2" />
+      <LineId Id="193" Count="2" />
+      <LineId Id="200" Count="0" />
+      <LineId Id="219" Count="2" />
       <LineId Id="2" Count="0" />
     </LineIds>
   </POU>
