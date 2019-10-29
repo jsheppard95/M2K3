@@ -701,15 +701,15 @@ External Setpoint Generation:
 			</Relations>
 		</DataType>
 		<DataType>
-			<Name GUID="{92384403-F9C6-4D86-BFDC-2A6DF62443D0}" Namespace="lcls_twincat_motion" AutoDeleteType="true">EL5042_Status</Name>
+			<Name GUID="{1E7A409D-08D2-4755-950E-3D99E63CEB5B}" Namespace="lcls_twincat_motion" AutoDeleteType="true">EL5042_Status</Name>
 			<BitSize>0</BitSize>
 			<BaseType GUID="{FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF}"/>
 			<Hides>
-				<Hide GUID="{906EBD0C-F626-4BB2-9DAE-CD42D8D3E873}"/>
+				<Hide GUID="{92384403-F9C6-4D86-BFDC-2A6DF62443D0}"/>
 			</Hides>
 		</DataType>
 		<DataType>
-			<Name GUID="{CE6D17A7-9E71-4CDC-BBD9-3F5042A35F8A}" Namespace="lcls_twincat_motion" AutoDeleteType="true">ST_RenishawAbsEnc</Name>
+			<Name GUID="{A15F9CC9-3834-44CF-B1BD-4661DD00CED4}" Namespace="lcls_twincat_motion" AutoDeleteType="true">ST_RenishawAbsEnc</Name>
 			<Comment>
 				<![CDATA[ Renishaw BiSS-C absolute encoder used with an EL5042 ]]>
 			</Comment>
@@ -725,7 +725,7 @@ External Setpoint Generation:
 			</SubItem>
 			<SubItem>
 				<Name>Status</Name>
-				<Type GUID="{92384403-F9C6-4D86-BFDC-2A6DF62443D0}" Namespace="lcls_twincat_motion">EL5042_Status</Type>
+				<Type GUID="{1E7A409D-08D2-4755-950E-3D99E63CEB5B}" Namespace="lcls_twincat_motion">EL5042_Status</Type>
 				<Comment>
 					<![CDATA[ Status struct placeholder]]>
 				</Comment>
@@ -742,7 +742,7 @@ External Setpoint Generation:
 				<BitOffs>64</BitOffs>
 			</SubItem>
 			<Hides>
-				<Hide GUID="{B9BA8B9C-F452-492A-BE1C-6EDDC4684228}"/>
+				<Hide GUID="{CE6D17A7-9E71-4CDC-BBD9-3F5042A35F8A}"/>
 			</Hides>
 		</DataType>
 		<DataType>
@@ -1577,7 +1577,7 @@ External Setpoint Generation:
 				</Var>
 				<Var>
 					<Name>MAIN.x_up_enc</Name>
-					<Type GUID="{CE6D17A7-9E71-4CDC-BBD9-3F5042A35F8A}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
+					<Type GUID="{A15F9CC9-3834-44CF-B1BD-4661DD00CED4}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
 					<SubVar>
 						<Name>Count</Name>
 						<Comment>
@@ -1599,7 +1599,7 @@ External Setpoint Generation:
 				</Var>
 				<Var>
 					<Name>MAIN.x_dwn_enc</Name>
-					<Type GUID="{CE6D17A7-9E71-4CDC-BBD9-3F5042A35F8A}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
+					<Type GUID="{A15F9CC9-3834-44CF-B1BD-4661DD00CED4}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
 					<SubVar>
 						<Name>Count</Name>
 						<Comment>
@@ -1621,7 +1621,7 @@ External Setpoint Generation:
 				</Var>
 				<Var>
 					<Name>MAIN.y_up_enc</Name>
-					<Type GUID="{CE6D17A7-9E71-4CDC-BBD9-3F5042A35F8A}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
+					<Type GUID="{A15F9CC9-3834-44CF-B1BD-4661DD00CED4}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
 					<SubVar>
 						<Name>Count</Name>
 						<Comment>
@@ -1643,7 +1643,7 @@ External Setpoint Generation:
 				</Var>
 				<Var>
 					<Name>MAIN.y_dwn_enc</Name>
-					<Type GUID="{CE6D17A7-9E71-4CDC-BBD9-3F5042A35F8A}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
+					<Type GUID="{A15F9CC9-3834-44CF-B1BD-4661DD00CED4}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
 					<SubVar>
 						<Name>Count</Name>
 						<Comment>
@@ -1692,6 +1692,13 @@ External Setpoint Generation:
 					<Type>ULINT</Type>
 				</Var>
 				<Var>
+					<Name>MAIN.bEncWarningXup</Name>
+					<Comment>
+						<![CDATA[ TRUE when encoder warning occurs]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
 					<Name>MAIN.nCoilACurrRaw</Name>
 					<Comment>
 						<![CDATA[ Current Variables]]>
@@ -1701,13 +1708,6 @@ External Setpoint Generation:
 				<Var>
 					<Name>MAIN.nCoilBCurrRaw</Name>
 					<Type>UINT</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.bEncWarningXup</Name>
-					<Comment>
-						<![CDATA[ TRUE when encoder warning occurs]]>
-					</Comment>
-					<Type>BOOL</Type>
 				</Var>
 				<Var>
 					<Name>MAIN.bEncWarningXdwn</Name>
@@ -1855,6 +1855,10 @@ External Setpoint Generation:
 			<OwnerB Name="TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 7 (EL7047) - Ydwn">
 				<Link VarA="PlcTask Inputs^MAIN.M2.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2"/>
 				<Link VarA="PlcTask Inputs^MAIN.M2.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 8 (EL7047) - Xup">
+				<Link VarA="PlcTask Inputs^MAIN.M3.bLimitBackwardEnable" VarB="STM Status^Digital input 2"/>
+				<Link VarA="PlcTask Inputs^MAIN.M3.bLimitForwardEnable" VarB="STM Status^Digital input 1"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 4 (EtherCAT)^Term 4 (EK1100)^Term 9 (EL7047) - Xdwn">
 				<Link VarA="PlcTask Inputs^MAIN.M4.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2"/>

@@ -40,8 +40,8 @@ VAR
 	// Gantry variables
 	nCurrGantryX : LINT;
 	nCurrGantryY : LINT;
-	nGantryTolX : LINT := 25000;
-	nGantryTolY : LINT := 25000;
+	nGantryTolX : LINT := 75000;
+	nGantryTolY : LINT := 75000;
 
 	// Current Variables
 	nCoilACurrRaw AT %I* : UINT;
@@ -83,10 +83,17 @@ M5.nEnableMode; // PitchCoarse
 // Encoder Reference Values: Initially took from Axilon FAT
 // Had to realign encoders (lights were red) and so now using motor positions after aligning (lights turned blue)
 // M2K3 Ref Vals
+(*
 y_up_enc.Ref := 43575680;
 y_dwn_enc.Ref := 46974520;
 x_up_enc.Ref := 20359920;
 x_dwn_enc.Ref := 19780970;
+*)
+// Gantry zero positions after realignment with metrology
+y_up_enc.Ref := 40653120;
+y_dwn_enc.Ref := 43456180;
+x_up_enc.Ref := 23635520;
+x_dwn_enc.Ref := 22541650;
 
 // Gantry Differences to monitor
 nCurrGantryY := ((ULINT_TO_LINT(y_up_enc.Count) - ULINT_TO_LINT(y_up_enc.Ref)) - (ULINT_TO_LINT(y_dwn_enc.Count) - ULINT_TO_LINT(y_dwn_enc.Ref)));
@@ -106,10 +113,12 @@ fbAutoCoupleX(nGantryTol:=nGantryTolX, Master:=M3, MasterEnc:=x_up_enc, Slave:=M
               bExecuteDecouple:=bExecuteDecoupleX,
               bGantryAlreadyCoupled=>bGantryAlreadyCoupledX);
 
+
 fbAutoCoupleY(nGantryTol:=nGantryTolY, Master:=M1, MasterEnc:=y_up_enc, Slave:=M2,
 	          SlaveEnc:=y_dwn_enc, bExecuteCouple:=bExecuteCoupleY,
               bExecuteDecouple:=bExecuteDecoupleY,
 			  bGantryAlreadyCoupled=>bGantryAlreadyCoupledY);
+
 
 fbMotionStage_y_up  (stMotionStage:=M1);
 fbMotionStage_y_dwn (stMotionStage:=M2);
@@ -133,7 +142,16 @@ ctuPitch(CU:=bEncWarningPitch, CV=>nNumWarningsPitch);]]></ST>
       <LineId Id="3" Count="7" />
       <LineId Id="87" Count="0" />
       <LineId Id="86" Count="0" />
-      <LineId Id="12" Count="32" />
+      <LineId Id="293" Count="0" />
+      <LineId Id="12" Count="4" />
+      <LineId Id="294" Count="0" />
+      <LineId Id="296" Count="3" />
+      <LineId Id="295" Count="0" />
+      <LineId Id="17" Count="17" />
+      <LineId Id="300" Count="0" />
+      <LineId Id="35" Count="4" />
+      <LineId Id="291" Count="0" />
+      <LineId Id="40" Count="4" />
       <LineId Id="136" Count="0" />
       <LineId Id="192" Count="0" />
       <LineId Id="137" Count="2" />
