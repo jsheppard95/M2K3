@@ -5,7 +5,7 @@
   <IsWizardTemplate>false</IsWizardTemplate>
   <LayoutString>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;Layout&gt;
-  &lt;Window Guid="b1560a06-9992-4c8c-9f35-e7602e22de09" LastFocused="132180485981280025" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="eb8d551f-2cc7-4025-b2af-4a164df487ad" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="b1560a06-9992-4c8c-9f35-e7602e22de09" LastFocused="132204995388471653" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="eb8d551f-2cc7-4025-b2af-4a164df487ad" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;DocumentContainer Dock="5"&gt;
     &lt;SplitLayoutSystem WorkingSize="250, 400" SplitMode="0"&gt;
       &lt;ControlLayoutSystem WorkingSize="250, 400" Guid="eb8d551f-2cc7-4025-b2af-4a164df487ad" Collapsed="0" SelectedControl="b1560a06-9992-4c8c-9f35-e7602e22de09"&gt;
@@ -18,7 +18,7 @@
 &lt;/Layout&gt;</LayoutString>
   <Operating>
     <RecordTime>36000000000</RecordTime>
-    <DataFileName>C:\Users\sheppard\Documents\Visual Studio 2013\Projects\M1L1</DataFileName>
+    <DataFileName>C:\Users\sheppard\Documents\Visual Studio 2013\Projects\M2K3_ScopeFiles</DataFileName>
     <RunMode>ClientStart</RunMode>
     <StopMode>AutoStop</StopMode>
     <ServerUseFileStore>true</ServerUseFileStore>
@@ -126,9 +126,9 @@
                 <SymbolName>AXES.x_up.ACTPOS</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>37</FileHandle>
+                <FileHandle>171</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -351,9 +351,9 @@
                 <SymbolName>AXES.x_up.SETPOS</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>38</FileHandle>
+                <FileHandle>172</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -610,9 +610,9 @@
                 <SymbolName>AXES.x_up.ACTVELO</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>39</FileHandle>
+                <FileHandle>173</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -835,9 +835,9 @@
                 <SymbolName>AXES.x_up.SETVELO</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>40</FileHandle>
+                <FileHandle>174</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -1094,9 +1094,9 @@
                 <SymbolName>AXES.x_up.POSDIFF</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>41</FileHandle>
+                <FileHandle>175</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -1353,9 +1353,9 @@
                 <SymbolName>Axes.x_dwn.ActPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>42</FileHandle>
+                <FileHandle>176</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -1578,9 +1578,9 @@
                 <SymbolName>Axes.x_dwn.SetPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>43</FileHandle>
+                <FileHandle>177</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -1837,9 +1837,9 @@
                 <SymbolName>Axes.x_dwn.ActVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>44</FileHandle>
+                <FileHandle>178</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -2062,9 +2062,9 @@
                 <SymbolName>Axes.x_dwn.SetVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>45</FileHandle>
+                <FileHandle>179</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -2321,9 +2321,9 @@
                 <SymbolName>Axes.x_dwn.PosDiff</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>46</FileHandle>
+                <FileHandle>180</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -2580,9 +2580,9 @@
                 <SymbolName>MAIN.nCurrGantryX</SymbolName>
                 <SymbolComment> Gantry variables</SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>47</FileHandle>
+                <FileHandle>181</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>100000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -2839,9 +2839,9 @@
                 <SymbolName>MAIN.nCurrGantryY</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>48</FileHandle>
+                <FileHandle>182</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>100000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -3071,7 +3071,7 @@
         <Precision>6</Precision>
       </CursorModule>
       <Operating>
-        <DisplayWidth>100000000</DisplayWidth>
+        <DisplayWidth>700000000</DisplayWidth>
       </Operating>
       <ChartType>XT</ChartType>
       <SortPriority>-1</SortPriority>
