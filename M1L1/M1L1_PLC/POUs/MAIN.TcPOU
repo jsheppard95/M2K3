@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.12">
   <POU Name="MAIN" Id="{2ce36a91-321d-4828-96a2-d7e21b9a58d0}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
@@ -8,6 +8,11 @@ VAR
 	M3: DUT_MotionStage:=(nCommand:=3); // Xup
 	M4: DUT_MotionStage:=(nCommand:=3); // Xdwn
 	M5: DUT_MotionStage:=(nCommand:=3); // PitchCoarse
+	M1_Extras : DUT_MotionStage_Extras;
+	M2_Extras : DUT_MotionStage_Extras;
+	M3_Extras : DUT_MotionStage_Extras;
+	M4_Extras : DUT_MotionStage_Extras;
+	M5_Extras : DUT_MotionStage_Extras;
 
 	fbMotionStage_x_up, fbMotionStage_x_dwn, fbMotionStage_y_up, fbMotionStage_y_dwn, fbMotionStage_pitch : FB_MotionStage;
 
@@ -33,6 +38,8 @@ VAR
 	nCurrGantryY : LINT;
 	nGantryTolX : LINT := 75000;
 	nGantryTolY : LINT := 75000;
+	fCurrGantryX_um : LREAL;
+	fCurrGantryY_um : LREAL;
 
 	// Current Variables
 	nCoilACurrRaw AT %I* : UINT;
@@ -89,6 +96,8 @@ x_dwn_enc.Ref := 22541650;
 // Gantry Differences to monitor
 nCurrGantryY := ((ULINT_TO_LINT(y_up_enc.Count) - ULINT_TO_LINT(y_up_enc.Ref)) - (ULINT_TO_LINT(y_dwn_enc.Count) - ULINT_TO_LINT(y_dwn_enc.Ref)));
 nCurrGantryX := ((ULINT_TO_LINT(x_up_enc.Count) - ULINT_TO_LINT(x_up_enc.Ref)) - (ULINT_TO_LINT(x_dwn_enc.Count) - ULINT_TO_LINT(x_dwn_enc.Ref)));
+fCurrGantryY_um := LINT_TO_LREAL(nCurrGantryY)/1000.0;
+fCurrGantryx_um := LINT_TO_LREAL(nCurrGantryX)/1000.0;
 
 // E-stop
 M1.bHardwareEnable := stoEnable1 AND stoEnable2;

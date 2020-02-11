@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ScopeViewSerializable>
-  <Version>1.0.0.7</Version>
+  <Version>1.0.0.6</Version>
   <Title>Scope YT NC Project</Title>
   <IsWizardTemplate>false</IsWizardTemplate>
   <LayoutString>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;Layout&gt;
-  &lt;Window Guid="b1560a06-9992-4c8c-9f35-e7602e22de09" LastFocused="132205655087022478" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="eb8d551f-2cc7-4025-b2af-4a164df487ad" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="b1560a06-9992-4c8c-9f35-e7602e22de09" LastFocused="132259125579151040" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="eb8d551f-2cc7-4025-b2af-4a164df487ad" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;DocumentContainer Dock="5"&gt;
     &lt;SplitLayoutSystem WorkingSize="250, 400" SplitMode="0"&gt;
       &lt;ControlLayoutSystem WorkingSize="250, 400" Guid="eb8d551f-2cc7-4025-b2af-4a164df487ad" Collapsed="0" SelectedControl="b1560a06-9992-4c8c-9f35-e7602e22de09"&gt;
@@ -28,11 +28,6 @@
       <AutoSavePath>
       </AutoSavePath>
       <FileNameMask>{SCOPE}_AutoSave_{HH_mm_ss}</FileNameMask>
-      <AutoDelete>
-        <AutoDeleteMode>Disabled</AutoDeleteMode>
-        <OlderThan>0</OlderThan>
-        <Capacity>0</Capacity>
-      </AutoDelete>
       <UnsavedChanges>false</UnsavedChanges>
     </ScopeStopAutoSave>
     <RestartRecord>false</RestartRecord>
@@ -113,7 +108,6 @@
           </Style>
           <Channels>
             <ScopeChannelSerializable>
-              <GUID>0e92ee8c-6fb7-4a00-bf86-8d33b5325c95</GUID>
               <Name>ACTPOS</Name>
               <IdentHandle>1</IdentHandle>
               <Acquisition>
@@ -123,7 +117,7 @@
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>AXES.pitch.ACTPOS</SymbolName>
+                <SymbolName>AXES.y_up.ACTPOS</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>49</FileHandle>
@@ -150,55 +144,18 @@
                 </DataAccess>
                 <DbSelect>unknown</DbSelect>
                 <DbColumn>unknown</DbColumn>
-                <DbTimeCol>unknown</DbTimeCol>
                 <DbId>0</DbId>
-                <DbTable>unknown</DbTable>
-                <DbRecords>
-                  <Records />
-                </DbRecords>
                 <IotFilePath>unknown</IotFilePath>
                 <IotFileTimeRangeId>18446744073709551615</IotFileTimeRangeId>
-                <IotFileRecords>
-                  <Records />
-                </IotFileRecords>
                 <IotFileSymbolName>unknown</IotFileSymbolName>
                 <IotFileValueByteOffset>4294967295</IotFileValueByteOffset>
                 <MqttHost>unknown</MqttHost>
                 <MqttLayout>00000000-0000-0000-0000-000000000000</MqttLayout>
                 <MqttTopic>unknown</MqttTopic>
                 <MqttTimeRangeId>18446744073709551615</MqttTimeRangeId>
-                <MqttRecords>
-                  <Records />
-                </MqttRecords>
-                <MqttConnectionSettings>
-                  <Broker>
-                  </Broker>
-                  <BrokerPort>1883</BrokerPort>
-                  <UserID>
-                  </UserID>
-                  <PasswordCrypted>BiMuChRAcTIBsgbfiLoDwoEzTpBpZ9UB</PasswordCrypted>
-                  <WithCertificates>false</WithCertificates>
-                  <CA_Certificate>
-                  </CA_Certificate>
-                  <CA_Pwd>
-                  </CA_Pwd>
-                  <Pfx_Certificate>
-                  </Pfx_Certificate>
-                  <Pfx_Pwd>
-                  </Pfx_Pwd>
-                  <Cert_Certificate>
-                  </Cert_Certificate>
-                  <Cert_Pwd>
-                  </Cert_Pwd>
-                  <Key_Certificate>
-                  </Key_Certificate>
-                  <Key_Pwd>
-                  </Key_Pwd>
-                </MqttConnectionSettings>
                 <MqttSymbolName>unknown</MqttSymbolName>
                 <MqttValueByteOffset>4294967295</MqttValueByteOffset>
                 <MqttCmdTopic>unknown</MqttCmdTopic>
-                <IsHistorical>false</IsHistorical>
                 <OpcUaAddress>
                   <ServerUrl>
                   </ServerUrl>
@@ -206,9 +163,6 @@
                   </EndpointName>
                   <SecurityPolicyUri>
                   </SecurityPolicyUri>
-                  <IdentityType>Anonymous</IdentityType>
-                  <UserName>
-                  </UserName>
                 </OpcUaAddress>
                 <OpcUaSymbol>
                   <Name>
@@ -266,7 +220,7 @@
                     <Offset>0</Offset>
                     <Symbol>
                     </Symbol>
-                    <ReturnText> (None) </ReturnText>
+                    <ReturnText>1 (Unit of One) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
                   </Unit>
@@ -304,7 +258,7 @@
                     <Offset>0</Offset>
                     <Symbol>
                     </Symbol>
-                    <ReturnText> (None) </ReturnText>
+                    <ReturnText>1 (Unit of One) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
                   </Unit>
@@ -338,7 +292,6 @@
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
             <ScopeChannelSerializable>
-              <GUID>d375c529-168a-4b30-805a-dbea11f3c088</GUID>
               <Name>SETPOS</Name>
               <IdentHandle>2</IdentHandle>
               <Acquisition>
@@ -348,7 +301,7 @@
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>AXES.pitch.SETPOS</SymbolName>
+                <SymbolName>AXES.y_up.SETPOS</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>50</FileHandle>
@@ -375,55 +328,18 @@
                 </DataAccess>
                 <DbSelect>unknown</DbSelect>
                 <DbColumn>unknown</DbColumn>
-                <DbTimeCol>unknown</DbTimeCol>
                 <DbId>0</DbId>
-                <DbTable>unknown</DbTable>
-                <DbRecords>
-                  <Records />
-                </DbRecords>
                 <IotFilePath>unknown</IotFilePath>
                 <IotFileTimeRangeId>18446744073709551615</IotFileTimeRangeId>
-                <IotFileRecords>
-                  <Records />
-                </IotFileRecords>
                 <IotFileSymbolName>unknown</IotFileSymbolName>
                 <IotFileValueByteOffset>4294967295</IotFileValueByteOffset>
                 <MqttHost>unknown</MqttHost>
                 <MqttLayout>00000000-0000-0000-0000-000000000000</MqttLayout>
                 <MqttTopic>unknown</MqttTopic>
                 <MqttTimeRangeId>18446744073709551615</MqttTimeRangeId>
-                <MqttRecords>
-                  <Records />
-                </MqttRecords>
-                <MqttConnectionSettings>
-                  <Broker>
-                  </Broker>
-                  <BrokerPort>1883</BrokerPort>
-                  <UserID>
-                  </UserID>
-                  <PasswordCrypted>nESzNC1I3zcBsgbfiLoDwo9aTpBpZ9UB</PasswordCrypted>
-                  <WithCertificates>false</WithCertificates>
-                  <CA_Certificate>
-                  </CA_Certificate>
-                  <CA_Pwd>
-                  </CA_Pwd>
-                  <Pfx_Certificate>
-                  </Pfx_Certificate>
-                  <Pfx_Pwd>
-                  </Pfx_Pwd>
-                  <Cert_Certificate>
-                  </Cert_Certificate>
-                  <Cert_Pwd>
-                  </Cert_Pwd>
-                  <Key_Certificate>
-                  </Key_Certificate>
-                  <Key_Pwd>
-                  </Key_Pwd>
-                </MqttConnectionSettings>
                 <MqttSymbolName>unknown</MqttSymbolName>
                 <MqttValueByteOffset>4294967295</MqttValueByteOffset>
                 <MqttCmdTopic>unknown</MqttCmdTopic>
-                <IsHistorical>false</IsHistorical>
                 <OpcUaAddress>
                   <ServerUrl>
                   </ServerUrl>
@@ -431,9 +347,6 @@
                   </EndpointName>
                   <SecurityPolicyUri>
                   </SecurityPolicyUri>
-                  <IdentityType>Anonymous</IdentityType>
-                  <UserName>
-                  </UserName>
                 </OpcUaAddress>
                 <OpcUaSymbol>
                   <Name>
@@ -491,7 +404,7 @@
                     <Offset>0</Offset>
                     <Symbol>
                     </Symbol>
-                    <ReturnText> (None) </ReturnText>
+                    <ReturnText>1 (Unit of One) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
                   </Unit>
@@ -529,7 +442,7 @@
                     <Offset>0</Offset>
                     <Symbol>
                     </Symbol>
-                    <ReturnText> (None) </ReturnText>
+                    <ReturnText>1 (Unit of One) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
                   </Unit>
@@ -563,11 +476,6 @@
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
           </Channels>
-          <Markers />
-          <MarkerControl>
-            <WidthValues />
-            <CreatedRows />
-          </MarkerControl>
           <SortPriority>0</SortPriority>
         </ScopeYAxisSerializable>
         <ScopeYAxisSerializable>
@@ -597,7 +505,6 @@
           </Style>
           <Channels>
             <ScopeChannelSerializable>
-              <GUID>10771dfb-49ef-46df-bda6-127efd298e3b</GUID>
               <Name>ACTVELO</Name>
               <IdentHandle>3</IdentHandle>
               <Acquisition>
@@ -607,7 +514,7 @@
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>AXES.pitch.ACTVELO</SymbolName>
+                <SymbolName>AXES.y_up.ACTVELO</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>51</FileHandle>
@@ -634,55 +541,18 @@
                 </DataAccess>
                 <DbSelect>unknown</DbSelect>
                 <DbColumn>unknown</DbColumn>
-                <DbTimeCol>unknown</DbTimeCol>
                 <DbId>0</DbId>
-                <DbTable>unknown</DbTable>
-                <DbRecords>
-                  <Records />
-                </DbRecords>
                 <IotFilePath>unknown</IotFilePath>
                 <IotFileTimeRangeId>18446744073709551615</IotFileTimeRangeId>
-                <IotFileRecords>
-                  <Records />
-                </IotFileRecords>
                 <IotFileSymbolName>unknown</IotFileSymbolName>
                 <IotFileValueByteOffset>4294967295</IotFileValueByteOffset>
                 <MqttHost>unknown</MqttHost>
                 <MqttLayout>00000000-0000-0000-0000-000000000000</MqttLayout>
                 <MqttTopic>unknown</MqttTopic>
                 <MqttTimeRangeId>18446744073709551615</MqttTimeRangeId>
-                <MqttRecords>
-                  <Records />
-                </MqttRecords>
-                <MqttConnectionSettings>
-                  <Broker>
-                  </Broker>
-                  <BrokerPort>1883</BrokerPort>
-                  <UserID>
-                  </UserID>
-                  <PasswordCrypted>jVqjOHQsId4BsgbfiLoDwpyBTpBpZ9UB</PasswordCrypted>
-                  <WithCertificates>false</WithCertificates>
-                  <CA_Certificate>
-                  </CA_Certificate>
-                  <CA_Pwd>
-                  </CA_Pwd>
-                  <Pfx_Certificate>
-                  </Pfx_Certificate>
-                  <Pfx_Pwd>
-                  </Pfx_Pwd>
-                  <Cert_Certificate>
-                  </Cert_Certificate>
-                  <Cert_Pwd>
-                  </Cert_Pwd>
-                  <Key_Certificate>
-                  </Key_Certificate>
-                  <Key_Pwd>
-                  </Key_Pwd>
-                </MqttConnectionSettings>
                 <MqttSymbolName>unknown</MqttSymbolName>
                 <MqttValueByteOffset>4294967295</MqttValueByteOffset>
                 <MqttCmdTopic>unknown</MqttCmdTopic>
-                <IsHistorical>false</IsHistorical>
                 <OpcUaAddress>
                   <ServerUrl>
                   </ServerUrl>
@@ -690,9 +560,6 @@
                   </EndpointName>
                   <SecurityPolicyUri>
                   </SecurityPolicyUri>
-                  <IdentityType>Anonymous</IdentityType>
-                  <UserName>
-                  </UserName>
                 </OpcUaAddress>
                 <OpcUaSymbol>
                   <Name>
@@ -750,7 +617,7 @@
                     <Offset>0</Offset>
                     <Symbol>
                     </Symbol>
-                    <ReturnText> (None) </ReturnText>
+                    <ReturnText>1 (Unit of One) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
                   </Unit>
@@ -788,7 +655,7 @@
                     <Offset>0</Offset>
                     <Symbol>
                     </Symbol>
-                    <ReturnText> (None) </ReturnText>
+                    <ReturnText>1 (Unit of One) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
                   </Unit>
@@ -822,7 +689,6 @@
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
             <ScopeChannelSerializable>
-              <GUID>dcf3c6b8-7fff-4d78-b8d1-bf9342fc3c09</GUID>
               <Name>SETVELO</Name>
               <IdentHandle>4</IdentHandle>
               <Acquisition>
@@ -832,7 +698,7 @@
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>AXES.pitch.SETVELO</SymbolName>
+                <SymbolName>AXES.y_up.SETVELO</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>52</FileHandle>
@@ -859,55 +725,18 @@
                 </DataAccess>
                 <DbSelect>unknown</DbSelect>
                 <DbColumn>unknown</DbColumn>
-                <DbTimeCol>unknown</DbTimeCol>
                 <DbId>0</DbId>
-                <DbTable>unknown</DbTable>
-                <DbRecords>
-                  <Records />
-                </DbRecords>
                 <IotFilePath>unknown</IotFilePath>
                 <IotFileTimeRangeId>18446744073709551615</IotFileTimeRangeId>
-                <IotFileRecords>
-                  <Records />
-                </IotFileRecords>
                 <IotFileSymbolName>unknown</IotFileSymbolName>
                 <IotFileValueByteOffset>4294967295</IotFileValueByteOffset>
                 <MqttHost>unknown</MqttHost>
                 <MqttLayout>00000000-0000-0000-0000-000000000000</MqttLayout>
                 <MqttTopic>unknown</MqttTopic>
                 <MqttTimeRangeId>18446744073709551615</MqttTimeRangeId>
-                <MqttRecords>
-                  <Records />
-                </MqttRecords>
-                <MqttConnectionSettings>
-                  <Broker>
-                  </Broker>
-                  <BrokerPort>1883</BrokerPort>
-                  <UserID>
-                  </UserID>
-                  <PasswordCrypted>Dd1DHhBErZQBsgbfiLoDwkSFTpBpZ9UB</PasswordCrypted>
-                  <WithCertificates>false</WithCertificates>
-                  <CA_Certificate>
-                  </CA_Certificate>
-                  <CA_Pwd>
-                  </CA_Pwd>
-                  <Pfx_Certificate>
-                  </Pfx_Certificate>
-                  <Pfx_Pwd>
-                  </Pfx_Pwd>
-                  <Cert_Certificate>
-                  </Cert_Certificate>
-                  <Cert_Pwd>
-                  </Cert_Pwd>
-                  <Key_Certificate>
-                  </Key_Certificate>
-                  <Key_Pwd>
-                  </Key_Pwd>
-                </MqttConnectionSettings>
                 <MqttSymbolName>unknown</MqttSymbolName>
                 <MqttValueByteOffset>4294967295</MqttValueByteOffset>
                 <MqttCmdTopic>unknown</MqttCmdTopic>
-                <IsHistorical>false</IsHistorical>
                 <OpcUaAddress>
                   <ServerUrl>
                   </ServerUrl>
@@ -915,9 +744,6 @@
                   </EndpointName>
                   <SecurityPolicyUri>
                   </SecurityPolicyUri>
-                  <IdentityType>Anonymous</IdentityType>
-                  <UserName>
-                  </UserName>
                 </OpcUaAddress>
                 <OpcUaSymbol>
                   <Name>
@@ -975,7 +801,7 @@
                     <Offset>0</Offset>
                     <Symbol>
                     </Symbol>
-                    <ReturnText> (None) </ReturnText>
+                    <ReturnText>1 (Unit of One) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
                   </Unit>
@@ -1013,7 +839,7 @@
                     <Offset>0</Offset>
                     <Symbol>
                     </Symbol>
-                    <ReturnText> (None) </ReturnText>
+                    <ReturnText>1 (Unit of One) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
                   </Unit>
@@ -1047,11 +873,6 @@
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
           </Channels>
-          <Markers />
-          <MarkerControl>
-            <WidthValues />
-            <CreatedRows />
-          </MarkerControl>
           <SortPriority>2</SortPriority>
         </ScopeYAxisSerializable>
         <ScopeYAxisSerializable>
@@ -1081,7 +902,6 @@
           </Style>
           <Channels>
             <ScopeChannelSerializable>
-              <GUID>a2884911-e1ba-4b6f-91b5-94ce99f0a23a</GUID>
               <Name>POSDIFF</Name>
               <IdentHandle>5</IdentHandle>
               <Acquisition>
@@ -1091,7 +911,7 @@
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>AXES.pitch.POSDIFF</SymbolName>
+                <SymbolName>AXES.y_up.POSDIFF</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>53</FileHandle>
@@ -1118,55 +938,18 @@
                 </DataAccess>
                 <DbSelect>unknown</DbSelect>
                 <DbColumn>unknown</DbColumn>
-                <DbTimeCol>unknown</DbTimeCol>
                 <DbId>0</DbId>
-                <DbTable>unknown</DbTable>
-                <DbRecords>
-                  <Records />
-                </DbRecords>
                 <IotFilePath>unknown</IotFilePath>
                 <IotFileTimeRangeId>18446744073709551615</IotFileTimeRangeId>
-                <IotFileRecords>
-                  <Records />
-                </IotFileRecords>
                 <IotFileSymbolName>unknown</IotFileSymbolName>
                 <IotFileValueByteOffset>4294967295</IotFileValueByteOffset>
                 <MqttHost>unknown</MqttHost>
                 <MqttLayout>00000000-0000-0000-0000-000000000000</MqttLayout>
                 <MqttTopic>unknown</MqttTopic>
                 <MqttTimeRangeId>18446744073709551615</MqttTimeRangeId>
-                <MqttRecords>
-                  <Records />
-                </MqttRecords>
-                <MqttConnectionSettings>
-                  <Broker>
-                  </Broker>
-                  <BrokerPort>1883</BrokerPort>
-                  <UserID>
-                  </UserID>
-                  <PasswordCrypted>Dd1DHhBErZQBsgbfiLoDwkSFTpBpZ9UB</PasswordCrypted>
-                  <WithCertificates>false</WithCertificates>
-                  <CA_Certificate>
-                  </CA_Certificate>
-                  <CA_Pwd>
-                  </CA_Pwd>
-                  <Pfx_Certificate>
-                  </Pfx_Certificate>
-                  <Pfx_Pwd>
-                  </Pfx_Pwd>
-                  <Cert_Certificate>
-                  </Cert_Certificate>
-                  <Cert_Pwd>
-                  </Cert_Pwd>
-                  <Key_Certificate>
-                  </Key_Certificate>
-                  <Key_Pwd>
-                  </Key_Pwd>
-                </MqttConnectionSettings>
                 <MqttSymbolName>unknown</MqttSymbolName>
                 <MqttValueByteOffset>4294967295</MqttValueByteOffset>
                 <MqttCmdTopic>unknown</MqttCmdTopic>
-                <IsHistorical>false</IsHistorical>
                 <OpcUaAddress>
                   <ServerUrl>
                   </ServerUrl>
@@ -1174,9 +957,6 @@
                   </EndpointName>
                   <SecurityPolicyUri>
                   </SecurityPolicyUri>
-                  <IdentityType>Anonymous</IdentityType>
-                  <UserName>
-                  </UserName>
                 </OpcUaAddress>
                 <OpcUaSymbol>
                   <Name>
@@ -1234,7 +1014,7 @@
                     <Offset>0</Offset>
                     <Symbol>
                     </Symbol>
-                    <ReturnText> (None) </ReturnText>
+                    <ReturnText>1 (Unit of One) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
                   </Unit>
@@ -1272,7 +1052,7 @@
                     <Offset>0</Offset>
                     <Symbol>
                     </Symbol>
-                    <ReturnText> (None) </ReturnText>
+                    <ReturnText>1 (Unit of One) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
                   </Unit>
@@ -1306,11 +1086,6 @@
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
           </Channels>
-          <Markers />
-          <MarkerControl>
-            <WidthValues />
-            <CreatedRows />
-          </MarkerControl>
           <SortPriority>4</SortPriority>
         </ScopeYAxisSerializable>
         <ScopeYAxisSerializable>
@@ -1340,17 +1115,16 @@
           </Style>
           <Channels>
             <ScopeChannelSerializable>
-              <GUID>96130c95-90c3-4bd4-948d-9c74999bb2d0</GUID>
               <Name>ActPos(1)</Name>
               <IdentHandle>6</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16649</IndexGroup>
+                <IndexGroup>16647</IndexGroup>
                 <IndexOffset>65538</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.x_dwn.ActPos</SymbolName>
+                <SymbolName>Axes.y_dwn.ActPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>54</FileHandle>
@@ -1377,55 +1151,18 @@
                 </DataAccess>
                 <DbSelect>unknown</DbSelect>
                 <DbColumn>unknown</DbColumn>
-                <DbTimeCol>unknown</DbTimeCol>
                 <DbId>0</DbId>
-                <DbTable>unknown</DbTable>
-                <DbRecords>
-                  <Records />
-                </DbRecords>
                 <IotFilePath>unknown</IotFilePath>
                 <IotFileTimeRangeId>18446744073709551615</IotFileTimeRangeId>
-                <IotFileRecords>
-                  <Records />
-                </IotFileRecords>
                 <IotFileSymbolName>unknown</IotFileSymbolName>
                 <IotFileValueByteOffset>4294967295</IotFileValueByteOffset>
                 <MqttHost>unknown</MqttHost>
                 <MqttLayout>00000000-0000-0000-0000-000000000000</MqttLayout>
                 <MqttTopic>unknown</MqttTopic>
                 <MqttTimeRangeId>18446744073709551615</MqttTimeRangeId>
-                <MqttRecords>
-                  <Records />
-                </MqttRecords>
-                <MqttConnectionSettings>
-                  <Broker>
-                  </Broker>
-                  <BrokerPort>1883</BrokerPort>
-                  <UserID>
-                  </UserID>
-                  <PasswordCrypted>uuUZT35iDGZDIKNgOStBw+1WrJbWbNUB</PasswordCrypted>
-                  <WithCertificates>false</WithCertificates>
-                  <CA_Certificate>
-                  </CA_Certificate>
-                  <CA_Pwd>
-                  </CA_Pwd>
-                  <Pfx_Certificate>
-                  </Pfx_Certificate>
-                  <Pfx_Pwd>
-                  </Pfx_Pwd>
-                  <Cert_Certificate>
-                  </Cert_Certificate>
-                  <Cert_Pwd>
-                  </Cert_Pwd>
-                  <Key_Certificate>
-                  </Key_Certificate>
-                  <Key_Pwd>
-                  </Key_Pwd>
-                </MqttConnectionSettings>
                 <MqttSymbolName>unknown</MqttSymbolName>
                 <MqttValueByteOffset>4294967295</MqttValueByteOffset>
                 <MqttCmdTopic>unknown</MqttCmdTopic>
-                <IsHistorical>false</IsHistorical>
                 <OpcUaAddress>
                   <ServerUrl>
                   </ServerUrl>
@@ -1433,9 +1170,6 @@
                   </EndpointName>
                   <SecurityPolicyUri>
                   </SecurityPolicyUri>
-                  <IdentityType>Anonymous</IdentityType>
-                  <UserName>
-                  </UserName>
                 </OpcUaAddress>
                 <OpcUaSymbol>
                   <Name>
@@ -1493,7 +1227,7 @@
                     <Offset>0</Offset>
                     <Symbol>
                     </Symbol>
-                    <ReturnText> (None) </ReturnText>
+                    <ReturnText>1 (Unit of One) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
                   </Unit>
@@ -1531,7 +1265,7 @@
                     <Offset>0</Offset>
                     <Symbol>
                     </Symbol>
-                    <ReturnText> (None) </ReturnText>
+                    <ReturnText>1 (Unit of One) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
                   </Unit>
@@ -1565,17 +1299,16 @@
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
             <ScopeChannelSerializable>
-              <GUID>c91c3077-5e88-43c2-b5ff-dac4aa632b21</GUID>
               <Name>SetPos(1)</Name>
               <IdentHandle>7</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16649</IndexGroup>
+                <IndexGroup>16647</IndexGroup>
                 <IndexOffset>10</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.x_dwn.SetPos</SymbolName>
+                <SymbolName>Axes.y_dwn.SetPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>55</FileHandle>
@@ -1602,55 +1335,18 @@
                 </DataAccess>
                 <DbSelect>unknown</DbSelect>
                 <DbColumn>unknown</DbColumn>
-                <DbTimeCol>unknown</DbTimeCol>
                 <DbId>0</DbId>
-                <DbTable>unknown</DbTable>
-                <DbRecords>
-                  <Records />
-                </DbRecords>
                 <IotFilePath>unknown</IotFilePath>
                 <IotFileTimeRangeId>18446744073709551615</IotFileTimeRangeId>
-                <IotFileRecords>
-                  <Records />
-                </IotFileRecords>
                 <IotFileSymbolName>unknown</IotFileSymbolName>
                 <IotFileValueByteOffset>4294967295</IotFileValueByteOffset>
                 <MqttHost>unknown</MqttHost>
                 <MqttLayout>00000000-0000-0000-0000-000000000000</MqttLayout>
                 <MqttTopic>unknown</MqttTopic>
                 <MqttTimeRangeId>18446744073709551615</MqttTimeRangeId>
-                <MqttRecords>
-                  <Records />
-                </MqttRecords>
-                <MqttConnectionSettings>
-                  <Broker>
-                  </Broker>
-                  <BrokerPort>1883</BrokerPort>
-                  <UserID>
-                  </UserID>
-                  <PasswordCrypted>zCzifZ5WyGPcfRapKnMnyFYLypzWbNUB</PasswordCrypted>
-                  <WithCertificates>false</WithCertificates>
-                  <CA_Certificate>
-                  </CA_Certificate>
-                  <CA_Pwd>
-                  </CA_Pwd>
-                  <Pfx_Certificate>
-                  </Pfx_Certificate>
-                  <Pfx_Pwd>
-                  </Pfx_Pwd>
-                  <Cert_Certificate>
-                  </Cert_Certificate>
-                  <Cert_Pwd>
-                  </Cert_Pwd>
-                  <Key_Certificate>
-                  </Key_Certificate>
-                  <Key_Pwd>
-                  </Key_Pwd>
-                </MqttConnectionSettings>
                 <MqttSymbolName>unknown</MqttSymbolName>
                 <MqttValueByteOffset>4294967295</MqttValueByteOffset>
                 <MqttCmdTopic>unknown</MqttCmdTopic>
-                <IsHistorical>false</IsHistorical>
                 <OpcUaAddress>
                   <ServerUrl>
                   </ServerUrl>
@@ -1658,9 +1354,6 @@
                   </EndpointName>
                   <SecurityPolicyUri>
                   </SecurityPolicyUri>
-                  <IdentityType>Anonymous</IdentityType>
-                  <UserName>
-                  </UserName>
                 </OpcUaAddress>
                 <OpcUaSymbol>
                   <Name>
@@ -1718,7 +1411,7 @@
                     <Offset>0</Offset>
                     <Symbol>
                     </Symbol>
-                    <ReturnText> (None) </ReturnText>
+                    <ReturnText>1 (Unit of One) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
                   </Unit>
@@ -1756,7 +1449,7 @@
                     <Offset>0</Offset>
                     <Symbol>
                     </Symbol>
-                    <ReturnText> (None) </ReturnText>
+                    <ReturnText>1 (Unit of One) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
                   </Unit>
@@ -1790,11 +1483,6 @@
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
           </Channels>
-          <Markers />
-          <MarkerControl>
-            <WidthValues />
-            <CreatedRows />
-          </MarkerControl>
           <SortPriority>2</SortPriority>
         </ScopeYAxisSerializable>
         <ScopeYAxisSerializable>
@@ -1824,17 +1512,16 @@
           </Style>
           <Channels>
             <ScopeChannelSerializable>
-              <GUID>aac556df-da55-4f4f-8118-2fb568287ba9</GUID>
               <Name>ActVelo(1)</Name>
               <IdentHandle>8</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16649</IndexGroup>
+                <IndexGroup>16647</IndexGroup>
                 <IndexOffset>65541</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.x_dwn.ActVelo</SymbolName>
+                <SymbolName>Axes.y_dwn.ActVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>56</FileHandle>
@@ -1861,55 +1548,18 @@
                 </DataAccess>
                 <DbSelect>unknown</DbSelect>
                 <DbColumn>unknown</DbColumn>
-                <DbTimeCol>unknown</DbTimeCol>
                 <DbId>0</DbId>
-                <DbTable>unknown</DbTable>
-                <DbRecords>
-                  <Records />
-                </DbRecords>
                 <IotFilePath>unknown</IotFilePath>
                 <IotFileTimeRangeId>18446744073709551615</IotFileTimeRangeId>
-                <IotFileRecords>
-                  <Records />
-                </IotFileRecords>
                 <IotFileSymbolName>unknown</IotFileSymbolName>
                 <IotFileValueByteOffset>4294967295</IotFileValueByteOffset>
                 <MqttHost>unknown</MqttHost>
                 <MqttLayout>00000000-0000-0000-0000-000000000000</MqttLayout>
                 <MqttTopic>unknown</MqttTopic>
                 <MqttTimeRangeId>18446744073709551615</MqttTimeRangeId>
-                <MqttRecords>
-                  <Records />
-                </MqttRecords>
-                <MqttConnectionSettings>
-                  <Broker>
-                  </Broker>
-                  <BrokerPort>1883</BrokerPort>
-                  <UserID>
-                  </UserID>
-                  <PasswordCrypted>ahD4Yr9FaMZaWD4LAjlkZwbuT63WbNUB</PasswordCrypted>
-                  <WithCertificates>false</WithCertificates>
-                  <CA_Certificate>
-                  </CA_Certificate>
-                  <CA_Pwd>
-                  </CA_Pwd>
-                  <Pfx_Certificate>
-                  </Pfx_Certificate>
-                  <Pfx_Pwd>
-                  </Pfx_Pwd>
-                  <Cert_Certificate>
-                  </Cert_Certificate>
-                  <Cert_Pwd>
-                  </Cert_Pwd>
-                  <Key_Certificate>
-                  </Key_Certificate>
-                  <Key_Pwd>
-                  </Key_Pwd>
-                </MqttConnectionSettings>
                 <MqttSymbolName>unknown</MqttSymbolName>
                 <MqttValueByteOffset>4294967295</MqttValueByteOffset>
                 <MqttCmdTopic>unknown</MqttCmdTopic>
-                <IsHistorical>false</IsHistorical>
                 <OpcUaAddress>
                   <ServerUrl>
                   </ServerUrl>
@@ -1917,9 +1567,6 @@
                   </EndpointName>
                   <SecurityPolicyUri>
                   </SecurityPolicyUri>
-                  <IdentityType>Anonymous</IdentityType>
-                  <UserName>
-                  </UserName>
                 </OpcUaAddress>
                 <OpcUaSymbol>
                   <Name>
@@ -1977,7 +1624,7 @@
                     <Offset>0</Offset>
                     <Symbol>
                     </Symbol>
-                    <ReturnText> (None) </ReturnText>
+                    <ReturnText>1 (Unit of One) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
                   </Unit>
@@ -2015,7 +1662,7 @@
                     <Offset>0</Offset>
                     <Symbol>
                     </Symbol>
-                    <ReturnText> (None) </ReturnText>
+                    <ReturnText>1 (Unit of One) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
                   </Unit>
@@ -2049,17 +1696,16 @@
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
             <ScopeChannelSerializable>
-              <GUID>052d27f2-4452-42c5-be78-3f618d91782b</GUID>
               <Name>SetVelo(1)</Name>
               <IdentHandle>9</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16649</IndexGroup>
+                <IndexGroup>16647</IndexGroup>
                 <IndexOffset>14</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.x_dwn.SetVelo</SymbolName>
+                <SymbolName>Axes.y_dwn.SetVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>57</FileHandle>
@@ -2086,55 +1732,18 @@
                 </DataAccess>
                 <DbSelect>unknown</DbSelect>
                 <DbColumn>unknown</DbColumn>
-                <DbTimeCol>unknown</DbTimeCol>
                 <DbId>0</DbId>
-                <DbTable>unknown</DbTable>
-                <DbRecords>
-                  <Records />
-                </DbRecords>
                 <IotFilePath>unknown</IotFilePath>
                 <IotFileTimeRangeId>18446744073709551615</IotFileTimeRangeId>
-                <IotFileRecords>
-                  <Records />
-                </IotFileRecords>
                 <IotFileSymbolName>unknown</IotFileSymbolName>
                 <IotFileValueByteOffset>4294967295</IotFileValueByteOffset>
                 <MqttHost>unknown</MqttHost>
                 <MqttLayout>00000000-0000-0000-0000-000000000000</MqttLayout>
                 <MqttTopic>unknown</MqttTopic>
                 <MqttTimeRangeId>18446744073709551615</MqttTimeRangeId>
-                <MqttRecords>
-                  <Records />
-                </MqttRecords>
-                <MqttConnectionSettings>
-                  <Broker>
-                  </Broker>
-                  <BrokerPort>1883</BrokerPort>
-                  <UserID>
-                  </UserID>
-                  <PasswordCrypted>0OOgK/wtFQ/z1KMD/VlSQhkm7LDWbNUB</PasswordCrypted>
-                  <WithCertificates>false</WithCertificates>
-                  <CA_Certificate>
-                  </CA_Certificate>
-                  <CA_Pwd>
-                  </CA_Pwd>
-                  <Pfx_Certificate>
-                  </Pfx_Certificate>
-                  <Pfx_Pwd>
-                  </Pfx_Pwd>
-                  <Cert_Certificate>
-                  </Cert_Certificate>
-                  <Cert_Pwd>
-                  </Cert_Pwd>
-                  <Key_Certificate>
-                  </Key_Certificate>
-                  <Key_Pwd>
-                  </Key_Pwd>
-                </MqttConnectionSettings>
                 <MqttSymbolName>unknown</MqttSymbolName>
                 <MqttValueByteOffset>4294967295</MqttValueByteOffset>
                 <MqttCmdTopic>unknown</MqttCmdTopic>
-                <IsHistorical>false</IsHistorical>
                 <OpcUaAddress>
                   <ServerUrl>
                   </ServerUrl>
@@ -2142,9 +1751,6 @@
                   </EndpointName>
                   <SecurityPolicyUri>
                   </SecurityPolicyUri>
-                  <IdentityType>Anonymous</IdentityType>
-                  <UserName>
-                  </UserName>
                 </OpcUaAddress>
                 <OpcUaSymbol>
                   <Name>
@@ -2202,7 +1808,7 @@
                     <Offset>0</Offset>
                     <Symbol>
                     </Symbol>
-                    <ReturnText> (None) </ReturnText>
+                    <ReturnText>1 (Unit of One) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
                   </Unit>
@@ -2240,7 +1846,7 @@
                     <Offset>0</Offset>
                     <Symbol>
                     </Symbol>
-                    <ReturnText> (None) </ReturnText>
+                    <ReturnText>1 (Unit of One) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
                   </Unit>
@@ -2274,11 +1880,6 @@
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
           </Channels>
-          <Markers />
-          <MarkerControl>
-            <WidthValues />
-            <CreatedRows />
-          </MarkerControl>
           <SortPriority>3</SortPriority>
         </ScopeYAxisSerializable>
         <ScopeYAxisSerializable>
@@ -2308,17 +1909,16 @@
           </Style>
           <Channels>
             <ScopeChannelSerializable>
-              <GUID>bfee8ed0-3737-491f-bdb5-fe16c580d914</GUID>
               <Name>PosDiff(1)</Name>
               <IdentHandle>10</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16649</IndexGroup>
+                <IndexGroup>16647</IndexGroup>
                 <IndexOffset>131087</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.x_dwn.PosDiff</SymbolName>
+                <SymbolName>Axes.y_dwn.PosDiff</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>58</FileHandle>
@@ -2345,55 +1945,18 @@
                 </DataAccess>
                 <DbSelect>unknown</DbSelect>
                 <DbColumn>unknown</DbColumn>
-                <DbTimeCol>unknown</DbTimeCol>
                 <DbId>0</DbId>
-                <DbTable>unknown</DbTable>
-                <DbRecords>
-                  <Records />
-                </DbRecords>
                 <IotFilePath>unknown</IotFilePath>
                 <IotFileTimeRangeId>18446744073709551615</IotFileTimeRangeId>
-                <IotFileRecords>
-                  <Records />
-                </IotFileRecords>
                 <IotFileSymbolName>unknown</IotFileSymbolName>
                 <IotFileValueByteOffset>4294967295</IotFileValueByteOffset>
                 <MqttHost>unknown</MqttHost>
                 <MqttLayout>00000000-0000-0000-0000-000000000000</MqttLayout>
                 <MqttTopic>unknown</MqttTopic>
                 <MqttTimeRangeId>18446744073709551615</MqttTimeRangeId>
-                <MqttRecords>
-                  <Records />
-                </MqttRecords>
-                <MqttConnectionSettings>
-                  <Broker>
-                  </Broker>
-                  <BrokerPort>1883</BrokerPort>
-                  <UserID>
-                  </UserID>
-                  <PasswordCrypted>g0HM0tkyTTGUGgVNluelrz5tnbvWbNUB</PasswordCrypted>
-                  <WithCertificates>false</WithCertificates>
-                  <CA_Certificate>
-                  </CA_Certificate>
-                  <CA_Pwd>
-                  </CA_Pwd>
-                  <Pfx_Certificate>
-                  </Pfx_Certificate>
-                  <Pfx_Pwd>
-                  </Pfx_Pwd>
-                  <Cert_Certificate>
-                  </Cert_Certificate>
-                  <Cert_Pwd>
-                  </Cert_Pwd>
-                  <Key_Certificate>
-                  </Key_Certificate>
-                  <Key_Pwd>
-                  </Key_Pwd>
-                </MqttConnectionSettings>
                 <MqttSymbolName>unknown</MqttSymbolName>
                 <MqttValueByteOffset>4294967295</MqttValueByteOffset>
                 <MqttCmdTopic>unknown</MqttCmdTopic>
-                <IsHistorical>false</IsHistorical>
                 <OpcUaAddress>
                   <ServerUrl>
                   </ServerUrl>
@@ -2401,9 +1964,6 @@
                   </EndpointName>
                   <SecurityPolicyUri>
                   </SecurityPolicyUri>
-                  <IdentityType>Anonymous</IdentityType>
-                  <UserName>
-                  </UserName>
                 </OpcUaAddress>
                 <OpcUaSymbol>
                   <Name>
@@ -2461,7 +2021,7 @@
                     <Offset>0</Offset>
                     <Symbol>
                     </Symbol>
-                    <ReturnText> (None) </ReturnText>
+                    <ReturnText>1 (Unit of One) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
                   </Unit>
@@ -2499,7 +2059,7 @@
                     <Offset>0</Offset>
                     <Symbol>
                     </Symbol>
-                    <ReturnText> (None) </ReturnText>
+                    <ReturnText>1 (Unit of One) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
                   </Unit>
@@ -2533,11 +2093,6 @@
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
           </Channels>
-          <Markers />
-          <MarkerControl>
-            <WidthValues />
-            <CreatedRows />
-          </MarkerControl>
           <SortPriority>4</SortPriority>
         </ScopeYAxisSerializable>
         <ScopeYAxisSerializable>
@@ -2545,7 +2100,7 @@
           <Name>Gantry X</Name>
           <Style>
             <Visible>true</Visible>
-            <Enabled>true</Enabled>
+            <Enabled>false</Enabled>
             <ColorValue>-13676721</ColorValue>
             <UseGrid>true</UseGrid>
             <Ticks>10</Ticks>
@@ -2567,13 +2122,12 @@
           </Style>
           <Channels>
             <ScopeChannelSerializable>
-              <GUID>534282f4-e2fe-492a-a6b1-2c81cc591338</GUID>
               <Name>nCurrGantryX</Name>
               <IdentHandle>11</IdentHandle>
               <Acquisition>
                 <DataType>INT64</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>646072</IndexOffset>
+                <IndexOffset>644984</IndexOffset>
                 <Unit />
                 <TargetPort>851</TargetPort>
                 <VariableSize>8</VariableSize>
@@ -2604,55 +2158,18 @@
                 </DataAccess>
                 <DbSelect>unknown</DbSelect>
                 <DbColumn>unknown</DbColumn>
-                <DbTimeCol>unknown</DbTimeCol>
                 <DbId>0</DbId>
-                <DbTable>unknown</DbTable>
-                <DbRecords>
-                  <Records />
-                </DbRecords>
                 <IotFilePath>unknown</IotFilePath>
                 <IotFileTimeRangeId>18446744073709551615</IotFileTimeRangeId>
-                <IotFileRecords>
-                  <Records />
-                </IotFileRecords>
                 <IotFileSymbolName>unknown</IotFileSymbolName>
                 <IotFileValueByteOffset>4294967295</IotFileValueByteOffset>
                 <MqttHost>unknown</MqttHost>
                 <MqttLayout>00000000-0000-0000-0000-000000000000</MqttLayout>
                 <MqttTopic>unknown</MqttTopic>
                 <MqttTimeRangeId>18446744073709551615</MqttTimeRangeId>
-                <MqttRecords>
-                  <Records />
-                </MqttRecords>
-                <MqttConnectionSettings>
-                  <Broker>
-                  </Broker>
-                  <BrokerPort>1883</BrokerPort>
-                  <UserID>
-                  </UserID>
-                  <PasswordCrypted>ccMaIGmnNrVb8njbRVHHEAEmPeVpZ9UB</PasswordCrypted>
-                  <WithCertificates>false</WithCertificates>
-                  <CA_Certificate>
-                  </CA_Certificate>
-                  <CA_Pwd>
-                  </CA_Pwd>
-                  <Pfx_Certificate>
-                  </Pfx_Certificate>
-                  <Pfx_Pwd>
-                  </Pfx_Pwd>
-                  <Cert_Certificate>
-                  </Cert_Certificate>
-                  <Cert_Pwd>
-                  </Cert_Pwd>
-                  <Key_Certificate>
-                  </Key_Certificate>
-                  <Key_Pwd>
-                  </Key_Pwd>
-                </MqttConnectionSettings>
                 <MqttSymbolName>unknown</MqttSymbolName>
                 <MqttValueByteOffset>4294967295</MqttValueByteOffset>
                 <MqttCmdTopic>unknown</MqttCmdTopic>
-                <IsHistorical>false</IsHistorical>
                 <OpcUaAddress>
                   <ServerUrl>
                   </ServerUrl>
@@ -2660,9 +2177,6 @@
                   </EndpointName>
                   <SecurityPolicyUri>
                   </SecurityPolicyUri>
-                  <IdentityType>Anonymous</IdentityType>
-                  <UserName>
-                  </UserName>
                 </OpcUaAddress>
                 <OpcUaSymbol>
                   <Name>
@@ -2720,7 +2234,7 @@
                     <Offset>0</Offset>
                     <Symbol>
                     </Symbol>
-                    <ReturnText> (None) </ReturnText>
+                    <ReturnText>1 (Unit of One) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
                   </Unit>
@@ -2758,7 +2272,7 @@
                     <Offset>0</Offset>
                     <Symbol>
                     </Symbol>
-                    <ReturnText> (None) </ReturnText>
+                    <ReturnText>1 (Unit of One) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
                   </Unit>
@@ -2792,11 +2306,6 @@
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
           </Channels>
-          <Markers />
-          <MarkerControl>
-            <WidthValues />
-            <CreatedRows />
-          </MarkerControl>
           <SortPriority>0</SortPriority>
         </ScopeYAxisSerializable>
         <ScopeYAxisSerializable>
@@ -2804,7 +2313,7 @@
           <Name>Gantry Y</Name>
           <Style>
             <Visible>true</Visible>
-            <Enabled>true</Enabled>
+            <Enabled>false</Enabled>
             <ColorValue>-13676721</ColorValue>
             <UseGrid>true</UseGrid>
             <Ticks>10</Ticks>
@@ -2826,13 +2335,12 @@
           </Style>
           <Channels>
             <ScopeChannelSerializable>
-              <GUID>2091440b-41e1-4549-b801-862e1f0e8229</GUID>
               <Name>nCurrGantryY</Name>
               <IdentHandle>12</IdentHandle>
               <Acquisition>
                 <DataType>INT64</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>646080</IndexOffset>
+                <IndexOffset>644992</IndexOffset>
                 <Unit />
                 <TargetPort>851</TargetPort>
                 <VariableSize>8</VariableSize>
@@ -2863,55 +2371,18 @@
                 </DataAccess>
                 <DbSelect>unknown</DbSelect>
                 <DbColumn>unknown</DbColumn>
-                <DbTimeCol>unknown</DbTimeCol>
                 <DbId>0</DbId>
-                <DbTable>unknown</DbTable>
-                <DbRecords>
-                  <Records />
-                </DbRecords>
                 <IotFilePath>unknown</IotFilePath>
                 <IotFileTimeRangeId>18446744073709551615</IotFileTimeRangeId>
-                <IotFileRecords>
-                  <Records />
-                </IotFileRecords>
                 <IotFileSymbolName>unknown</IotFileSymbolName>
                 <IotFileValueByteOffset>4294967295</IotFileValueByteOffset>
                 <MqttHost>unknown</MqttHost>
                 <MqttLayout>00000000-0000-0000-0000-000000000000</MqttLayout>
                 <MqttTopic>unknown</MqttTopic>
                 <MqttTimeRangeId>18446744073709551615</MqttTimeRangeId>
-                <MqttRecords>
-                  <Records />
-                </MqttRecords>
-                <MqttConnectionSettings>
-                  <Broker>
-                  </Broker>
-                  <BrokerPort>1883</BrokerPort>
-                  <UserID>
-                  </UserID>
-                  <PasswordCrypted>kH+Hkjnt3tuVlVNv0CYBgXXpCvZpZ9UB</PasswordCrypted>
-                  <WithCertificates>false</WithCertificates>
-                  <CA_Certificate>
-                  </CA_Certificate>
-                  <CA_Pwd>
-                  </CA_Pwd>
-                  <Pfx_Certificate>
-                  </Pfx_Certificate>
-                  <Pfx_Pwd>
-                  </Pfx_Pwd>
-                  <Cert_Certificate>
-                  </Cert_Certificate>
-                  <Cert_Pwd>
-                  </Cert_Pwd>
-                  <Key_Certificate>
-                  </Key_Certificate>
-                  <Key_Pwd>
-                  </Key_Pwd>
-                </MqttConnectionSettings>
                 <MqttSymbolName>unknown</MqttSymbolName>
                 <MqttValueByteOffset>4294967295</MqttValueByteOffset>
                 <MqttCmdTopic>unknown</MqttCmdTopic>
-                <IsHistorical>false</IsHistorical>
                 <OpcUaAddress>
                   <ServerUrl>
                   </ServerUrl>
@@ -2919,9 +2390,6 @@
                   </EndpointName>
                   <SecurityPolicyUri>
                   </SecurityPolicyUri>
-                  <IdentityType>Anonymous</IdentityType>
-                  <UserName>
-                  </UserName>
                 </OpcUaAddress>
                 <OpcUaSymbol>
                   <Name>
@@ -2979,7 +2447,7 @@
                     <Offset>0</Offset>
                     <Symbol>
                     </Symbol>
-                    <ReturnText> (None) </ReturnText>
+                    <ReturnText>1 (Unit of One) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
                   </Unit>
@@ -3017,7 +2485,7 @@
                     <Offset>0</Offset>
                     <Symbol>
                     </Symbol>
-                    <ReturnText> (None) </ReturnText>
+                    <ReturnText>1 (Unit of One) </ReturnText>
                     <BaseUnitString />
                     <NameExtension />
                   </Unit>
@@ -3051,11 +2519,6 @@
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
           </Channels>
-          <Markers />
-          <MarkerControl>
-            <WidthValues />
-            <CreatedRows />
-          </MarkerControl>
           <SortPriority>1</SortPriority>
         </ScopeYAxisSerializable>
       </YAxes>
@@ -3068,10 +2531,9 @@
         <ChartTimeVisible>true</ChartTimeVisible>
         <DeltaValues>false</DeltaValues>
         <HexValues>false</HexValues>
-        <Precision>6</Precision>
       </CursorModule>
       <Operating>
-        <DisplayWidth>470000000</DisplayWidth>
+        <DisplayWidth>100000000</DisplayWidth>
       </Operating>
       <ChartType>XT</ChartType>
       <SortPriority>-1</SortPriority>

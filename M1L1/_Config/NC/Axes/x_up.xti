@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmItem" TcSmVersion="1.0" TcVersion="3.1.4022.30" ClassName="CNcAxisDef" SubType="1">
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmItem" TcSmVersion="1.0" TcVersion="3.1.4022.22" ClassName="CNcAxisDef" SubType="1">
 	<DataTypes>
 		<DataType>
 			<Name GUID="{76EB036C-07A7-446B-91CB-CECCF6977DF3}" TcBaseType="true" HideType="true">UINTARR2_2</Name>
@@ -1326,18 +1326,15 @@ External Setpoint Generation:
 		<AxisPara>
 			<General UnitName="um"/>
 			<Dynamic Acceleration="1000" Deceleration="1000" DelayTime="0.008"/>
-			<Velo Maximum="625"/>
+			<Velo Maximum="300"/>
 			<OtherSettings AllowMotionCmdToSlave="true"/>
-			<ParameterChanged>260</ParameterChanged>
-			<ParameterChanged>39</ParameterChanged>
-			<ParameterChanged>257</ParameterChanged>
-			<ParameterChanged>258</ParameterChanged>
 		</AxisPara>
 		<Encoder Name="Enc" EncType="29">
 			<EncPara ScaleFactorNumerator="0.001" MaxCount="#xffffffff" ReferenceSystem="1">
+				<SoftEndMinControl Enable="true" Range="16900"/>
+				<SoftEndMaxControl Enable="true" Range="23600"/>
 				<Inc RefSoftSyncMask="#x0000ffff"/>
-				<ParameterChanged>25</ParameterChanged>
-				<ParameterChanged>35</ParameterChanged>
+				<ParameterChanged>13</ParameterChanged>
 			</EncPara>
 			<Vars VarGrpType="1">
 				<Name>Inputs</Name>
@@ -1382,7 +1379,6 @@ External Setpoint Generation:
 			<DrvPara Inverse="true">
 				<Analog VeloReferenz="625" ScaleFactorActTorque="0.1"/>
 				<TimeComp TaskDelayCycles="1"/>
-				<ParameterChanged>6</ParameterChanged>
 			</DrvPara>
 			<Vars VarGrpType="1">
 				<Name>Inputs</Name>
@@ -1474,12 +1470,6 @@ Drive Status 4 (manually linked):
 				<PosDiffControl Range="50"/>
 				<PID PosTn="0.005" PosIOutputLimit="0.0001" PosDOutputLimit="0" PosIDisableWhenMoving="true" DeadBandPosition="0.001"/>
 				<Observer BandWidth="20"/>
-				<ParameterChanged>269</ParameterChanged>
-				<ParameterChanged>280</ParameterChanged>
-				<ParameterChanged>279</ParameterChanged>
-				<ParameterChanged>259</ParameterChanged>
-				<ParameterChanged>18</ParameterChanged>
-				<ParameterChanged>278</ParameterChanged>
 			</CtrPara>
 		</Controller>
 		<Vars VarGrpType="1" InsertType="1">
